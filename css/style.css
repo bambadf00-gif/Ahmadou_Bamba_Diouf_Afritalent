@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Italianno&display=swap');
+/* commit 3 */
+:root{
+    --font-titel: 'DM Serif Display', serif;
+    --font-para:'Playfair Display', serif;
+    --font-deco: 'Italianno', cursive;
+   --bs-primary: #d1fe17 !important;
+   --bs-primary-rgb :209, 254, 23 !important;
+   --bs-black:#000;
+   --bs-black-rgb:0,0,0;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    color: var(--bs-black);
+    font-family: var(--font-para);
+    line-height: 1.6;
+}
+.containeur{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+a{
+    text-decoration: none;
+}
+h1,h2,h3,h4{
+    font-weight: 700;
+    font-family: var(--font-titel);
+}
+.navbar-brand img{
+    width: 2vw;
+}

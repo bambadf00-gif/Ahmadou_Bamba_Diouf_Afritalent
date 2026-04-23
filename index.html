@@ -7,43 +7,62 @@
     <title>Aceuil</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="css/styl.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
 
 <body>
     <header>
-        <div>
-            <nav>
-                <a href="#">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top ">
+            <div class="container">
+                <!-- logo  -->
+                <a class="navbar-brand" href="index.html">
                     <img src="image/logo.png" alt="Afritalent">
                     <span>AfriTalent</span>
                 </a>
-                <ul>
-                    <li><a href="#">Accueil</a></li>
-                    <li><a href="freelances.html" target="_blank">Freelances</a></li>
-                    <li><a href="tarifs.html">Tarifs</a></li>
-                    <li><a href="about.html">À propos</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-                <a href="#">Rejoindre AfriTalent →</a>
-            </nav>
-            <div>
-                <button>
-                    <i class="bi bi-brightness-high-fill"></i>
+
+                <!-- menu burger  -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
+                    aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
                 </button>
+
+                <div class="collapse navbar-collapse" id="navMenu">
+                    <!-- lien de menu  -->
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item"><a class="nav-link active" href="#">Accueil</a></li>
+                        <li class="nav-item"><a class="nav-link" href="freelances.html" target="_blank">Freelances</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="tarifs.html">Tarifs</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">À propos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    </ul>
+                    <div class="nav-item bg-primary py-1 px-2 rounded-2 list-unstyled mx-3">
+                        <a class="nav-link fw-bold text-dark" href="#">Rejoindre AfriTalent</a>
+                    </div>
+                    <!-- bouton rejoindre et darkmod  -->
+                    <button class="bg-transparent  fs-4 px-1 border-0 text-white">
+                        <i class="bi bi-brightness-high-fill"></i>
+                    </button>
+                </div>
             </div>
-        </div>
+        </nav>
     </header>
     <main>
         <section>
-            <div>
-                <h1>Connecter les talents tech africains aux opportunités du monde</h1>
-                <h2>AfriTalent est la plateforme qui met en relation les meilleurs freelances tech d’Afrique avec des
-                    entreprises ambitieuses, locales et internationales.</h2>
+            <div class="d-flex mt-5">
                 <div>
-                    <a href="#">Je suis Freelance</a>
-                    <a href="#">Je cherche un Freelance</a>
+                    <h1>Connecter les talents tech africains aux opportunités du monde</h1>
+                    <h2>AfriTalent est la plateforme qui met en relation les meilleurs freelances tech d’Afrique avec
+                        des
+                        entreprises ambitieuses, locales et internationales.</h2>
+                    <div>
+                        <a href="#">Je suis Freelance</a>
+                        <a href="#">Je cherche un Freelance</a>
+                    </div>
+                </div>
+                <div>
+                    <img src="image/mac.png" alt="">
                 </div>
             </div>
             <div>
@@ -359,6 +378,8 @@
     <div>
         <button>^</button>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 
 </html>
