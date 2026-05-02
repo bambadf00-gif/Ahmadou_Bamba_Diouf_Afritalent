@@ -8,16 +8,16 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="icon" href="image/logo.png" type="image/png">
 </head>
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light  fixed-top">
+        <nav class="navbar navbar-expand-lg mt-3 shadow mx-auto navbar-light rounded-4 bg-light fixed-top ">
             <div class="container">
                 <!-- logo  -->
-                <a class="navbar-brand fw-bold" href="index.html">
+                <a class="navbar-brand" href="index.html">
                     <img src="image/logo.png" alt="Afritalent">
-                    <span>AfriTalent</span>
                 </a>
 
                 <!-- menu burger  -->
@@ -29,20 +29,19 @@
                 <div class="collapse navbar-collapse" id="navMenu">
                     <!-- lien de menu  -->
                     <ul class="navbar-nav mx-auto">
-                        <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
-                        <li class="nav-item"><a class="nav-link" href="freelances.html" target="_blank">Freelances</a>
-                        </li>
+                        <li class="nav-item"><a class="nav-link active" href="index.html">Accueil</a></li>
+                        <li class="nav-item"><a class="nav-link" href="freelances.html">Freelances</a></li>
                         <li class="nav-item"><a class="nav-link" href="tarifs.html">Tarifs</a></li>
-                        <li class="nav-item"><a class="nav-link active" href="#">À propos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">À propos</a></li>
                         <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
                         <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                     </ul>
-                    <div class="nav-item bg-primary py-1 px-2 rounded-2 list-unstyled mx-3">
-                        <a class="nav-link fw-bold text-dark" href="#">Rejoindre AfriTalent</a>
-                    </div>
+                    <li class="nav-item rounded-2 btn-primary list-unstyled px-2 mx-3">
+                        <a class="nav-link text-white fw-bold text-dark" href="#">Rejoindre AfriTalent</a>
+                    </li>
                     <!-- bouton rejoindre et darkmod  -->
-                    <button class="bg-transparent  fs-4 px-1 border-0 text-white">
-                        <i class="bi bi-brightness-high-fill"></i>
+                    <button class="bg-transparent fs-4 px-1 border-0">
+                        <i class="bi bi-moon-stars-fill"></i>
                     </button>
                 </div>
             </div>
@@ -51,230 +50,381 @@
 
     <main>
         <section>
-            <div>
-                <h1>Nés en Afrique. Construits pour le monde.</h1>
-                <p>
-                    AfriTalent est né en 2022 à Dakar, d'un constat simple :
-                    l'Afrique regorge de talents tech extraordinaires, mais
-                    manque d'une plateforme qui les valorise à leur juste valeur.
-
-                    Nos fondateurs, eux-mêmes développeurs et designers
-                    freelances, ont vécu les frustrations du marché : paiements
-                    retardés, clients peu sérieux, manque de visibilité. Ils ont
-                    décidé de construire la solution qu'ils auraient aimé avoir.
-
-                    Aujourd'hui, AfriTalent rassemble une communauté de plus
-                    de 2 500 professionnels du numérique dans 18 pays africains,
-                    et continue de grandir chaque jour.
-                </p>
-            </div>
-        </section>
-
-        <section>
-            <div>
-                <div>
-                    <img src="image/avis (1).jpg" alt="Amadou Sy Co-fondateur & CEO">
-                    <div>
-                        <strong>Amadou Sy</strong>
-                        <span>Co-fondateur & CEO</span>
+            <div class="container my-5">
+                <div class="row align-items-center px-5 g-5 my-5">
+                    <div class="col-12 col-md-12 col-lg-6">
+                        <h1 class="fw-bold tittel">L'Afrique <br> comme <span class="text-primary fs-4">moteur
+                                ,</span><br> le monde <br> comme horizon</h1>
                         <p>
-                            Visionnaire passionné par l'écosystème tech africain.
+                            AfriTalent est né d'un constat simple : l'Afrique regorge de talents tech extraordinaires,
+                            mais manque d'une plateforme qui les valorise à leur juste valeur. Nous sommes cette
+                            plateforme.
                         </p>
                     </div>
-                    <div>
-                        <i class="bi bi-tiktok"></i>
-                        <i class="bi bi-twitter-x"></i>
-                    </div>
-                </div>
-
-                <div>
-                    <img src="image/avis (2).jpg" alt="Amadou Sy Co-fondateur & CEO">
-                    <div>
-                        <strong>Fatoumata Camara</strong>
-                        <span>Co-fondatrice & CTO</span>
-                        <p>
-                            Ingénieure logiciel avec 8 ans d'expérience en fintech.
-                        </p>
-                    </div>
-                    <div>
-                        <i class="bi bi-tiktok"></i>
-                        <i class="bi bi-twitter-x"></i>
-                    </div>
-                </div>
-
-                <div>
-                    <img src="image/avis (3).jpg" alt="Amadou Sy Co-fondateur & CEO">
-                    <div>
-                        <strong>Omar Niang</strong>
-                        <span>Directeur Marketing</span>
-                        <p>
-                            Growth hacker spécialisé dans les marchés émergents africains.
-                        </p>
-                    </div>
-                    <div>
-                        <i class="bi bi-tiktok"></i>
-                        <i class="bi bi-twitter-x"></i>
-                    </div>
-                </div>
-
-                <div>
-                    <img src="image/avis (4).jpg" alt="Amadou Sy Co-fondateur & CEO">
-                    <div>
-                        <strong>Rokhaya Fall</strong>
-                        <span>Responsable Communauté</span>
-                        <p>
-                            Animatrice de la communauté AfriTalent dans 18 pays.
-                        </p>
-                    </div>
-                    <div>
-                        <i class="bi bi-tiktok"></i>
-                        <i class="bi bi-twitter-x"></i>
+                    <div class="col-12 col-md-12 ps-5 col-lg-6">
+                        <img class="img-hom-about" src="image/about.png" alt="">
                     </div>
                 </div>
             </div>
         </section>
 
         <section>
-            <h2>NOS VALEURS</h2>
-            <div>
-                <div>
-                    <img src="image/idee.png" alt="Innovation">
-                    <h4>Innovation</h4>
-                    <p>
-                        Nous repoussons constamment les limites pour offrir des
-                        outils modernes adaptés aux réalités africaines.
-                    </p>
-                </div>
-
-                <div>
-                    <img src="image/accessibilite.png" alt="Accessibilité">
-                    <h4>Accessibilité</h4>
-                    <p>
-                        Tout talent mérite sa chance. Nos services sont conçus
-                        pour être accessibles depuis n'importe quel appareil,
-                        même en faible connexion.
-                    </p>
-                </div>
-
-                <div>
-                    <img src="image/arrows-down-to-people-solid-full (1).svg" alt="Communauté frelance">
-                    <h4>Communauté</h4>
-                    <p>
-                        AfriTalent, c'est avant tout une famille. Nous croyons
-                        en la force du réseau et de l'entraide entre professionnels.
-                    </p>
-                </div>
-
-                <div>
-                    <img src="image/Excellence.png" alt="Excellence">
-                    <h4>Excellence</h4>
-                    <p>
-                        Nous maintenons un standard de qualité élevé pour garantir
-                        la confiance entre freelances et entreprises.
-                    </p>
+            <div class="container mat mab">
+                <div class="overflow-hidden">
+                    <div class="pays d-flex gap-5 fw-bold text-primary fs-1 py-5">
+                        <span>Sénégal</span>
+                        <span>Nigeria</span>
+                        <span>Kenya</span>
+                        <span>Ghana</span>
+                        <span class="flex-shrink-0">Côte d'Ivoire</span>
+                        <span>Maroc</span>
+                        <span>Égypte</span>
+                        <span>Rwanda</span>
+                        <span>Tanzanie</span>
+                        <span>Cameroun</span>
+                        <span>Éthiopie</span>
+                        <span class="flex-shrink-0">Afrique du Sud</span>
+                        <span>Sénégal</span>
+                        <span>Nigeria</span>
+                        <span>Kenya</span>
+                        <span>Ghana</span>
+                        <span class="flex-shrink-0">Côte d'Ivoire</span>
+                        <span>Maroc</span>
+                        <span>Égypte</span>
+                        <span>Rwanda</span>
+                        <span>Tanzanie</span>
+                        <span>Cameroun</span>
+                        <span>Éthiopie</span>
+                        <span class="flex-shrink-0">Afrique du Sud</span>
+                        <span>Sénégal</span>
+                        <span>Nigeria</span>
+                        <span>Kenya</span>
+                        <span>Ghana</span>
+                        <span class="flex-shrink-0">Côte d'Ivoire</span>
+                    </div>
                 </div>
             </div>
         </section>
 
         <section>
-            <div>
-                <strong>
-                    <data value="2500">2 500</data>+ Freelances actifs
-                </strong>
-                <strong>
-                    <data value="29">29</data>Pays représentés
-                </strong>
-                <strong>
-                    <data value="800">800</data>+ Entreprises partenaires
-                </strong>
-                <strong>
-                    <data value="12000">12 000</data>+ Missions réalisées
-                </strong>
-                <strong>
-                    <data value="99">99</data>% Taux de satisfaction
-                </strong>
-                <strong>
-                    <time datetime="2020">2020</time>Année de création
-                </strong>
+            <div class="container">
+                <span class="badge bg-primary mx-4">Notre histoires</span>
+                <div class="bg-white mt-4 py-5 rounded-5">
+                    <div class="row mab px-4">
+                        <div class="col-12 col-lg-6 col-md-6">
+                            <h2>Construits par
+                                des freelances, pour des freelances
+                            </h2>
+                        </div>
+                        <div class="col-12 col-lg-6 col-md-6">
+                            <p>
+                                Nos fondateurs, eux-mêmes développeurs et designers freelances, ont vécu les
+                                frustrations du marché : paiements retardés, clients peu sérieux, manque de visibilité
+                                internationale.
+
+                                Aujourd’hui, AfriTalent rassemble plus de <span>2 500 professionnels</span> dans
+                                <span>29 pays africains</span>,
+                                et continue de grandir chaque jour.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="etap-histoire mx-4">
+                        <div class="etap-hist p-4 rounded-4">
+                            <h6 class="fs-5 fw-bold">2022 — Naissance</h6>
+                            <p>Création à Dakar. 50 freelances en bêta.</p>
+                        </div>
+                        <div class="etap-hist p-4 rounded-4">
+                            <h6 class="fs-5 fw-bold">2023 — Expansion</h6>
+                            <p>12 pays, 500 freelances, 100 entreprises.</p>
+                        </div>
+                        <div class="etap-hist p-4 rounded-4">
+                            <h6 class="fs-5 fw-bold">2024 — Croissance</h6>
+                            <p>1 000 missions, paiements sécurisés.</p>
+                        </div>
+                        <div class="p-4 text-white rounded-4 histoire2025">
+                            <h6 class="fs-5 fw-bold">2025 — Accélération</h6>
+                            <p>2 500+ membres, 29 pays, Série A.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
+
+        <section>
+            <div class="py-5">
+                <div class="container">
+                    <div class="row g-4 mat">
+                        <h2 class="text-center pb-5">L’équipe dirigeante</h2>
+                        <div class="col-12 col-lg-3 col-md-6">
+                            <div class="card">
+                                <img class="card-img-top" src="image/avis (5).jpg" alt="Amadou Sy Co-fondateur & CEO">
+                                <div class="card-body justify-content-center d-flex flex-column align-items-center">
+                                    <h5 class="fw-bold card-title">Amadou Sy</h5>
+                                    <p class="card-text">Co-fondateur et CEO</p>
+                                    <div class="text-primary">
+                                        <a href="#" class="mx-2">
+                                            <i class="bi bi-tiktok"></i>
+                                        </a>
+                                        <a href="#" class="mx-2">
+                                            <i class="bi bi-twitter-x"></i>
+                                        </a>
+                                        <a href="#" class="mx-2">
+                                            <i class="bi bi-linkedin"></i>
+                                        </a>
+                                        <a href="#" class="mx-2">
+                                            <i class="bi bi-github"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-lg-3 col-md-4">
+                            <div class="card">
+                                <img class="card-img-top" src="image/avis (1).jpg" alt="Amadou Sy Co-fondateur & CEO">
+                                <div class="card-body justify-content-center d-flex flex-column align-items-center">
+                                    <h5 class="fw-bold card-title">Fatoumata Camara</h5>
+                                    <p class="card-text">Co-fondatrice & CTO</p>
+                                    <div class="text-primary">
+                                        <a href="#" class="mx-2">
+                                            <i class="bi bi-tiktok"></i>
+                                        </a>
+                                        <a href="#" class="mx-2">
+                                            <i class="bi bi-twitter-x"></i>
+                                        </a>
+                                        <a href="#" class="mx-2">
+                                            <i class="bi bi-linkedin"></i>
+                                        </a>
+                                        <a href="#" class="mx-2">
+                                            <i class="bi bi-github"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-lg-3 col-md-4">
+                            <div class="card">
+                                <img class="card-img-top" src="image/avis (6).jpg" alt="Amadou Sy Co-fondateur & CEO">
+                                <div class="card-body justify-content-center d-flex flex-column align-items-center">
+                                    <h5 class="fw-bold card-title">Omar Niang</h5>
+                                    <p class="card-text">Directeur Marketing</p>
+                                    <div class="text-primary">
+                                        <a href="#" class="mx-2">
+                                            <i class="bi bi-tiktok"></i>
+                                        </a>
+                                        <a href="#" class="mx-2">
+                                            <i class="bi bi-twitter-x"></i>
+                                        </a>
+                                        <a href="#" class="mx-2">
+                                            <i class="bi bi-linkedin"></i>
+                                        </a>
+                                        <a href="#" class="mx-2">
+                                            <i class="bi bi-github"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-lg-3 col-md-4">
+                            <div class="card">
+                                <img class="card-img-top" src="image/avis (3).jpg" alt="Amadou Sy Co-fondateur & CEO">
+                                <div class="card-body justify-content-center d-flex flex-column align-items-center">
+                                    <h5 class="fw-bold card-title">Rokhaya Fall</h5>
+                                    <p class="card-text">Responsable Communauté</p>
+                                    <div class="text-primary">
+                                        <a href="#" class="mx-2">
+                                            <i class="bi bi-tiktok"></i>
+                                        </a>
+                                        <a href="#" class="mx-2">
+                                            <i class="bi bi-twitter-x"></i>
+                                        </a>
+                                        <a href="#" class="mx-2">
+                                            <i class="bi bi-linkedin"></i>
+                                        </a>
+                                        <a href="#" class="mx-2">
+                                            <i class="bi bi-github"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="py-5 d-flex justify-content-center flex-column">
+                <div class="container">
+                    <h2 class="mb-5 text-center fw-bold fs-4">NOS VALEURS</h2>
+                    <div class="row g-4 justify-content-center my-4">
+                        <div class="col-12 col-md-6 col-lg-8 ">
+                            <div class="shadow bg-primary text-white rounded-5 valeur h-100 p-4">
+                                <div class="d-flex align-items-center gap-5">
+                                    <img class="py-5" src="image/idee.png" alt="Innovation">
+                                    <h5 class="fw-bold tittel">Innovation</h5>
+                                </div>
+                                <p>
+                                    Nous repoussons constamment les limites pour offrir des
+                                    outils modernes adaptés aux réalités africaines.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class=" col-6 col-md-4 col-lg-4 d-flex flex-column">
+                            <div class="">
+                                <div class="text-center shadow  rounded-5 valeur h-100 p-4">
+                                    <img src="image/accessibilite.png" alt="Accessibilité">
+                                    <h5 class="fw-bold">Accessibilité</h5>
+                                    <p>
+                                        Chaque talent mérite une chance, accessible partout.
+
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="mt-3">
+                                <div class="text-center shadow  rounded-5 valeur h-100 p-4">
+                                    <img src="image/arrows-down-to-people-solid-full (1).svg" alt="Communauté frelance">
+                                    <h5 class="fw-bold">Communauté</h5>
+                                    <p>
+                                        AfriTalent est une communauté fondée sur l’entraide entre professionnels.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="py5 mab">
+                <div class="container">
+                    <h3 class="fs-1 fw-bold text-center my-5">Chiffres clés</h3>
+                    <div class="row">
+                        <div class="col-12 col-lg-4 col-md-4">
+                            <div class="rounded-5 shadow my-4 d-flex py-5 flex-column align-items-center">
+                                <data class="fw-bold fs-1" value="2500">29</data>Pays représentés
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-8 col-md-8">
+                            <div
+                                class="rounded-5 shadow my-4 bg-primary text-white d-flex py-5 flex-column align-items-center">
+                                <data class="fw-bold fs-1" value="2500">2 500</data>+ Freelances actifs
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-4 col-md-6">
+                            <div class="rounded-5 shadow my-4 d-flex py-5 flex-column align-items-center">
+                                <data class="fw-bold fs-1" value="800">800</data>+ Entreprises partenaires
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-4 col-md-6">
+                            <div class="rounded-5 shadow my-4 d-flex py-5 flex-column align-items-center">
+                                <data class="fw-bold fs-1" value="12000">12 000</data>+ Missions réalisées
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-4 col-md-6">
+                            <div class="rounded-5 shadow my-4 py-5 d-flex flex-column align-items-center">
+                                <data class="fw-bold fs-1" value="99">99</data>% Taux de satisfaction
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </main>
 
     <footer>
-        <div>
-            <!-- a propos -->
-            <div>
-                <a href="#">
-                    <img src="image/logo.png" alt="Afritalent">
-                    <span>AfriTalent</span>
-                </a>
-                <p>
-                    AfriTalent connecte les freelances tech africains aux entreprises
-                    du continent et du monde entier. Talent. Confiance. Croissance.
-                </p>
-                <div>
-                    <div>
-                        <i class="bi bi-tiktok"></i>
+        <div class="container-fluid">
+            <div class="container ">
+                <div class="row mt-4 pt-5">
+                    <!-- a propos -->
+                    <div class="col-12 col-lg-3 col-md-4">
+                        <a href="#" class="navbar-brand">
+                            <img src="image/logo.png" alt="Afritalent">
+                            <!-- <span class="text-primary">AfriTalent</span> -->
+                        </a>
+                        <p class="my-3">
+                            AfriTalent connecte les freelances tech africains aux entreprises
+                            du continent et du monde entier. Talent. Confiance. Croissance.
+                        </p>
+                        <div class="d-flex gap-3 liensociale">
+                            <a href="#" class="fs-4 p-1 rounded-circle text-white">
+                                <i class="bi bi-tiktok"></i>
+                            </a>
+                            <a href="#" class="fs-4 p-1 rounded-circle text-white">
+                                <i class="bi bi-discord"></i>
+                            </a>
+                            <a href="#" class="fs-4 p-1 rounded-circle text-white">
+                                <i class="bi bi-facebook"></i>
+                            </a>
+                            <a href="#" class="fs-4 p-1 rounded-circle text-white">
+                                <i class="bi bi-twitter-x"></i>
+                            </a>
+                            <a href="#" class="fs-4 p-1 rounded-circle text-white">
+                                <i class="bi bi-linkedin"></i>
+                            </a>
+                        </div>
                     </div>
-                    <div>
-                        <i class="bi bi-discord"></i>
-                    </div>
-                    <div>
-                        <i class="bi bi-facebook"></i>
-                    </div>
-                    <div>
-                        <i class="bi bi-twitter-x"></i>
-                    </div>
-                </div>
-            </div>
 
-            <!-- Liens utiles -->
-            <div>
-                <h5>Liens utiles</h5>
-                <ul>
-                    <li><a href="index.html">Accueil</a></li>
-                    <li><a href="tarifs.html">Tarifs</a></li>
-                    <li><a href="#">À propos</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </div>
+                    <!-- Liens utiles -->
+                    <div class="col-12 col-lg-3 col-md-4">
+                        <h5 class="fs-4 fw-bold mb-4">Liens utiles</h5>
+                        <ul class="list-unstyled animationfooter d-flex flex-column gap-3">
+                            <li><a href="index.html">Accueil</a></li>
+                            <li><a href="freelances.html">Freelances</a></li>
+                            <li><a href="tarifs.html">Tarifs</a></li>
+                            <li><a href="#">À propos</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
 
-            <!-- Ressources -->
-            <div>
-                <h5>Ressources</h5>
-                <ul>
-                    <li><a href="#">Guide du freelance débutant</a></li>
-                    <li><a href="#">Rédiger un bon profil</a></li>
-                    <li><a href="#">Trouver vos premiers clients</a></li>
-                    <li><a href="#">FAQ</a></li>
-                    <li><a href="#">Actualités tech</a></li>
-                    <li><a href="#">Conditions d'utilisation</a></li>
-                    <li><a href="#">Politique de confidentialité</a></li>
-                </ul>
-            </div>
-            <div>
-                <div>
-                    <h5>Contact</h5>
-                    <address>
-                        <p>📧 contact@afritalent.africa</p>
-                        <p>📞 +221 33 800 00 00</p>
-                        <p>📍 Dakar Plateau, Sénégal</p>
-                    </address>
-                </div>
-            </div>
-            <div>
-                <div>
-                    <p>© 2026 AfriTalent — Tous droits réservés.</p>
+                    <!-- Ressources -->
+                    <div class="col-12 col-lg-3 col-md-4">
+                        <h5 class="fs-4 fw-bold mb-4">Ressources</h5>
+                        <ul class="list-unstyled animationfooter d-flex flex-column gap-3">
+                            <li><a href="#" class="py-2">Guide du freelance débutant</a></li>
+                            <li><a href="#" class="py-2">Rédiger un bon profil</a></li>
+                            <li><a href="#" class="py-2">Trouver vos premiers clients</a></li>
+                            <li><a href="#" class="py-2">FAQ</a></li>
+                            <li><a href="#" class="py-2">Blog & Actualités tech</a></li>
+                            <li><a href="#" class="py-2">Conditions d'utilisation</a></li>
+                            <li><a href="#" class="py-5">Politique de confidentialité</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-lg-3 col-md-4">
+                        <div>
+                            <h5 class="fs-4 fw-bold mb-4">Contact</h5>
+                            <address>
+                                <p><strong>Email :</strong><br> contact@afritalent.africa</p>
+                                <p><strong>Téléphone :</strong><br> +221 33 800 00 00</p>
+                                <p><strong>Adresse :</strong><br> Dakar Plateau, Sénégal</p>
+                            </address>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="text-center mt-4 border-1 pt-4 border-top">
+                            <p>© 2026 AfriTalent — Tous droits réservés.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </footer>
-    <div>
-        <button>^</button>
+    <div class="fixed-bottom d-flex">
+        <!-- <button class="ms-auto bg-transparent fs-1 border-0 fw-bold "> -->
+        <a class="ms-auto bg-transparent fs-1 border-0 fw-bold mx-5 my-3 text-black " href="#"><i
+                class="bi bi-arrow-up"></i></a>
+        <!-- </button> -->
     </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

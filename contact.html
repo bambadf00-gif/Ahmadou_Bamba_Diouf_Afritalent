@@ -8,16 +8,16 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="icon" href="image/logo.png" type="image/png">
 </head>
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <nav class="navbar navbar-expand-lg mt-3 shadow mx-auto navbar-light rounded-4 bg-light fixed-top ">
             <div class="container">
                 <!-- logo  -->
                 <a class="navbar-brand" href="index.html">
                     <img src="image/logo.png" alt="Afritalent">
-                    <span>AfriTalent</span>
                 </a>
 
                 <!-- menu burger  -->
@@ -29,20 +29,19 @@
                 <div class="collapse navbar-collapse" id="navMenu">
                     <!-- lien de menu  -->
                     <ul class="navbar-nav mx-auto">
-                        <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
-                        <li class="nav-item"><a class="nav-link" href="freelances.html" target="_blank">Freelances</a>
-                        </li>
+                        <li class="nav-item"><a class="nav-link active" href="index.html">Accueil</a></li>
+                        <li class="nav-item"><a class="nav-link" href="freelances.html">Freelances</a></li>
                         <li class="nav-item"><a class="nav-link" href="tarifs.html">Tarifs</a></li>
                         <li class="nav-item"><a class="nav-link" href="about.html">À propos</a></li>
                         <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
-                        <li class="nav-item"><a class="nav-link active" href="#">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
                     </ul>
-                    <div class="nav-item bg-primary py-1 px-2 rounded-2 list-unstyled mx-3">
-                        <a class="nav-link fw-bold text-dark" href="#">Rejoindre AfriTalent</a>
-                    </div>
+                    <li class="nav-item rounded-2 btn-primary list-unstyled px-2 mx-3">
+                        <a class="nav-link text-white fw-bold text-dark" href="#">Rejoindre AfriTalent</a>
+                    </li>
                     <!-- bouton rejoindre et darkmod  -->
-                    <button class="bg-transparent  fs-4 px-1 border-0 text-white">
-                        <i class="bi bi-brightness-high-fill"></i>
+                    <button class="bg-transparent fs-4 px-1 border-0">
+                        <i class="bi bi-moon-stars-fill"></i>
                     </button>
                 </div>
             </div>
@@ -51,169 +50,173 @@
 
     <main>
         <section>
-            <div>
-                <div>
-                    <h1>On est là pour vous.</h1>
+            <div class="container ">
+                <div class="mat text-center mab">
+                    <h1 class="fs-1">On est là pour vous.</h1>
                     <p>
                         Une question, une suggestion ou envie de
                         rejoindre l'équipe ? Écrivez-nous !
                     </p>
                 </div>
-                <div>
-                    <form action="">
-                        <div>
-                            <div>
-                                <label for="#">Nom *</label>
-                                <input type="text" name="name" placeholder="Milliard" required>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-12 col-md-6 h-100 bg-light shadow rounded-2 py-5 px-3">
+                        <form action="">
+                            <div class="row">
+                                <div class="col-12 col-md-6 d-flex flex-column ">
+                                    <label for="">Nom *</label>
+                                    <input class="form-control" type="text" name="name" placeholder="Milliard" required>
+                                </div>
+                                <div class="col-12 col-md-6 d-flex flex-column ">
+                                    <label for="">Prénom *</label>
+                                    <input class="form-control" type="text" name="prenom" placeholder="Milliard"
+                                        required>
+                                </div>
                             </div>
-
-                            <div>
-                                <label for="">Prénom *</label>
-                                <input type="text" name="prenom" placeholder="Milliard" required>
+                            <div class="d-flex flex-column ">
+                                <label for="">mail *</label>
+                                <input class="form-control" type="text" name="mail" placeholder="Milliard@dollard.com"
+                                    required>
                             </div>
-                        </div>
-                        <div>
-                            <label for="">Sujet *</label>
-                            <select name="" id="" required>
-                                <option value="">Sélectionnez un service</option>
-                                <option value="Question">Question générale</option>
-                                <option value="Problème">Problème technique</option>
-                                <option value="Partenariat">Partenariat commercial</option>
-                                <option value="Signaler">Signaler un abus</option>
-                                <option value="Rejoindre">Rejoindre l'équipe</option>
-                                <option value="autre">Autre</option>
-                            </select>
-                        </div>
-                        <div>
-                            <label for="">Message * </label>
-                            <textarea name="message" id="message">
-                                d'ecrive votre message
-                            </textarea>
-                        </div>
-                        <button>Envoyer le message →</button>
-                    </form>
-                    <div>
-                        <h4>Message envoyé !</h4>
-                        <p>
-                            Votre message a bien été envoyé !
-                            Notre équipe vous répondra dans les 24 heures.
-                        </p>
+                            <div class="d-flex flex-column ">
+                                <label for="">Sujet *</label>
+                                <select class="form-control" name="" id="" required>
+                                    <option value="">Sélectionnez un service</option>
+                                    <option value="Question">Question générale</option>
+                                    <option value="Problème">Problème technique</option>
+                                    <option value="Partenariat">Partenariat commercial</option>
+                                    <option value="Signaler">Signaler un abus</option>
+                                    <option value="Rejoindre">Rejoindre l'équipe</option>
+                                    <option value="autre">Autre</option>
+                                </select>
+                            </div>
+                            <div class="d-flex flex-column mb-5">
+                                <label for="">Message * </label>
+                                <textarea class="form-control mb4" name="message" id="message"
+                                    placeholder="d'ecrive votre message" rows="5"></textarea>
+                            </div>
+                            <button class="btn btn-primary form-control">Envoyer le message →</button>
+                        </form>
                     </div>
-                </div>
 
-                <div>
-                    <div>
-                        <address>
-                            <p>📧 contact@afritalent.africa</p>
-                            <p>📞 +221 33 800 00 00</p>
-                            <p>📍 12, Avenue Léopold Sédar Senghor
-                                Dakar Plateau, Sénégal</p>
-                        </address>
-                    </div>
-                    <div>
-                        <h2>Horaires</h2>
-                        <table>
-                            <tr>
-                                <td>Lundi - Vendredi</td>
-                                <td>08h00 - 22h00</td>
-                            </tr>
-                            <tr>
-                                <td>Samedi</td>
-                                <td>09h00 - 20h00</td>
-                            </tr>
-                            <tr>
-                                <td>Dimanche</td>
-                                <td>Fermé</td>
-                            </tr>
-                        </table>
+                    <div class="col-12 col-md-6 mab">
+                        <div class="bg-light rounded-2 shadow p-3 mb-5">
+                            <address class="d-flex flex-column">
+                                <span class="py-3">
+                                    📧 <strong>Email :</strong>contact@afritalent.africa
+                                </span>
+                                <span class="py-3">
+                                    📞 <strong>Téléphone :</strong> +221 33 800 00 00
+                                </span>
+                                <span class="py-3">
+                                    📍<strong>Adresse :</strong>Dakar, Sénégal
+                                </span>
+                            </address>
+                        </div>
+                        <div class="bg-light rounded-2 shadow p-3 vh-100 d-flex flex-column">
+                            <strong class="py-4">Localisation</strong>
+                            <iframe class="ifa rounded-4"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30873.56443412955!2d-17.479215860366818!3d14.701530515744876!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xec17294860da20f%3A0xf94a7846fc39faa8!2sCentre%20De%20Sant%C3%A9%20Gaspard%20Kamara!5e0!3m2!1sfr!2ssn!4v1776797894359!5m2!1sfr!2ssn"
+                                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
                     </div>
                 </div>
             </div>
-        </section>
-
-        <section>
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30873.56443412955!2d-17.479215860366818!3d14.701530515744876!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xec17294860da20f%3A0xf94a7846fc39faa8!2sCentre%20De%20Sant%C3%A9%20Gaspard%20Kamara!5e0!3m2!1sfr!2ssn!4v1776797894359!5m2!1sfr!2ssn"
-                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>
     </main>
 
     <footer>
-        <div>
-            <!-- a propos -->
-            <div>
-                <a href="#">
-                    <img src="image/logo.png" alt="Afritalent">
-                    <span>AfriTalent</span>
-                </a>
-                <p>
-                    AfriTalent connecte les freelances tech africains aux entreprises
-                    du continent et du monde entier. Talent. Confiance. Croissance.
-                </p>
-                <div>
-                    <div>
-                        <i class="bi bi-tiktok"></i>
+        <div class="container-fluid">
+            <div class="container ">
+                <div class="row mt-4 pt-5">
+                    <!-- a propos -->
+                    <div class="col-12 col-lg-3 col-md-4">
+                        <a href="#" class="navbar-brand">
+                            <img src="image/logo.png" alt="Afritalent">
+                            <!-- <span class="text-primary">AfriTalent</span> -->
+                        </a>
+                        <p class="my-3">
+                            AfriTalent connecte les freelances tech africains aux entreprises
+                            du continent et du monde entier. Talent. Confiance. Croissance.
+                        </p>
+                        <div class="d-flex gap-3 liensociale">
+                            <a href="#" class="fs-4 p-1 rounded-circle text-white">
+                                <i class="bi bi-tiktok"></i>
+                            </a>
+                            <a href="#" class="fs-4 p-1 rounded-circle text-white">
+                                <i class="bi bi-discord"></i>
+                            </a>
+                            <a href="#" class="fs-4 p-1 rounded-circle text-white">
+                                <i class="bi bi-facebook"></i>
+                            </a>
+                            <a href="#" class="fs-4 p-1 rounded-circle text-white">
+                                <i class="bi bi-twitter-x"></i>
+                            </a>
+                            <a href="#" class="fs-4 p-1 rounded-circle text-white">
+                                <i class="bi bi-linkedin"></i>
+                            </a>
+                        </div>
                     </div>
-                    <div>
-                        <i class="bi bi-discord"></i>
-                    </div>
-                    <div>
-                        <i class="bi bi-facebook"></i>
-                    </div>
-                    <div>
-                        <i class="bi bi-twitter-x"></i>
-                    </div>
-                </div>
-            </div>
 
-            <!-- Liens utiles -->
-            <div>
-                <h5>Liens utiles</h5>
-                <ul>
-                    <li><a href="index.html">Accueil</a></li>
-                    <li><a href="tarifs.html">Tarifs</a></li>
-                    <li><a href="about.html">À propos</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </div>
+                    <!-- Liens utiles -->
+                    <div class="col-12 col-lg-3 col-md-4">
+                        <h5 class="fs-4 fw-bold mb-4">Liens utiles</h5>
+                        <ul class="list-unstyled animationfooter d-flex flex-column gap-3">
+                            <li><a href="index.html">Accueil</a></li>
+                            <li><a href="freelances.html">Freelances</a></li>
+                            <li><a href="tarifs.html">Tarifs</a></li>
+                            <li><a href="about.html">À propos</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
 
-            <!-- Ressources -->
-            <div>
-                <h5>Ressources</h5>
-                <ul>
-                    <li><a href="#">Guide du freelance débutant</a></li>
-                    <li><a href="#">Rédiger un bon profil</a></li>
-                    <li><a href="#">Trouver vos premiers clients</a></li>
-                    <li><a href="#">FAQ</a></li>
-                    <li><a href="#">Actualités tech</a></li>
-                    <li><a href="#">Conditions d'utilisation</a></li>
-                    <li><a href="#">Politique de confidentialité</a></li>
-                </ul>
-            </div>
-            <div>
-                <div>
-                    <h5>Contact</h5>
-                    <address>
-                        <p>📧 contact@afritalent.africa</p>
-                        <p>📞 +221 33 800 00 00</p>
-                        <p>📍 Dakar Plateau, Sénégal</p>
-                    </address>
-                </div>
-            </div>
-            <div>
-                <div>
-                    <p>© 2026 AfriTalent — Tous droits réservés.</p>
+                    <!-- Ressources -->
+                    <div class="col-12 col-lg-3 col-md-4">
+                        <h5 class="fs-4 fw-bold mb-4">Ressources</h5>
+                        <ul class="list-unstyled animationfooter d-flex flex-column gap-3">
+                            <li><a href="#" class="py-2">Guide du freelance débutant</a></li>
+                            <li><a href="#" class="py-2">Rédiger un bon profil</a></li>
+                            <li><a href="#" class="py-2">Trouver vos premiers clients</a></li>
+                            <li><a href="#" class="py-2">FAQ</a></li>
+                            <li><a href="#" class="py-2">Blog & Actualités tech</a></li>
+                            <li><a href="#" class="py-2">Conditions d'utilisation</a></li>
+                            <li><a href="#" class="py-5">Politique de confidentialité</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-lg-3 col-md-4">
+                        <div>
+                            <h5 class="fs-4 fw-bold mb-4">Contact</h5>
+                            <address>
+                                <p><strong>Email :</strong><br> contact@afritalent.africa</p>
+                                <p><strong>Téléphone :</strong><br> +221 33 800 00 00</p>
+                                <p><strong>Adresse :</strong><br> Dakar Plateau, Sénégal</p>
+                            </address>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="text-center mt-4 border-1 pt-4 border-top">
+                            <p>© 2026 AfriTalent — Tous droits réservés.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </footer>
-    <div>
-        <button>^</button>
+    <div class="fixed-bottom d-flex">
+        <!-- <button class="ms-auto bg-transparent fs-1 border-0 fw-bold "> -->
+        <a class="ms-auto bg-transparent fs-1 border-0 fw-bold mx-5 my-3 text-black " href="#"><i
+                class="bi bi-arrow-up"></i></a>
+        <!-- </button> -->
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

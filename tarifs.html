@@ -8,16 +8,16 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="icon" href="image/logo.png" type="image/png">
 </head>
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light  fixed-top">
+        <nav class="navbar navbar-expand-lg mt-3 shadow mx-auto navbar-light rounded-4 bg-light fixed-top ">
             <div class="container">
                 <!-- logo  -->
                 <a class="navbar-brand" href="index.html">
                     <img src="image/logo.png" alt="Afritalent">
-                    <span>AfriTalent</span>
                 </a>
 
                 <!-- menu burger  -->
@@ -29,20 +29,20 @@
                 <div class="collapse navbar-collapse" id="navMenu">
                     <!-- lien de menu  -->
                     <ul class="navbar-nav mx-auto">
-                        <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
-                        <li class="nav-item"><a class="nav-link" href="freelances.html" target="_blank">Freelances</a>
+                        <li class="nav-item"><a class="nav-link active" href="index.html">Accueil</a></li>
+                        <li class="nav-item"><a class="nav-link" href="freelances.html">Freelances</a>
                         </li>
-                        <li class="nav-item"><a class="nav-link active" href="#">Tarifs</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Tarifs</a></li>
                         <li class="nav-item"><a class="nav-link" href="about.html">À propos</a></li>
                         <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
                         <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                     </ul>
-                    <div class="nav-item bg-primary py-1 px-2 rounded-2 list-unstyled mx-3">
-                        <a class="nav-link fw-bold text-dark" href="#">Rejoindre AfriTalent</a>
-                    </div>
+                    <li class="nav-item rounded-2 btn-primary list-unstyled px-2 mx-3">
+                        <a class="nav-link text-white fw-bold text-dark" href="#">Rejoindre AfriTalent</a>
+                    </li>
                     <!-- bouton rejoindre et darkmod  -->
-                    <button class="bg-transparent  fs-4 px-1 border-0 text-white">
-                        <i class="bi bi-brightness-high-fill"></i>
+                    <button class="bg-transparent fs-4 px-1 border-0">
+                        <i class="bi bi-moon-stars-fill"></i>
                     </button>
                 </div>
             </div>
@@ -50,190 +50,270 @@
     </header>
     <main>
         <section>
-            <h1>Des tarifs simples et transparents.</h1>
-            <h2>Choisissez le plan qui correspond à votre activité.
-                Sans engagement, sans mauvaise surprise.</h2>
+            <div class="container vh-30 text-center mat">
+                <h1 class="fw-bold fs-3 p-2">Des tarifs simples et transparents.</h1>
+                <h2 class="fs-6">
+                    Choisissez le plan qui correspond à votre activité.
+                    Sans engagement, sans mauvaise surprise.
+                </h2>
+            </div>
         </section>
 
         <section>
-            <div>
-                <div>
-                    <h3>PLAN GRATUIT — 0 FCFA / mois</h3>
-                    <p>
-                        ✅ Création de profil public
-                        ✅ 3 candidatures par mois
-                        ✅ Accès au catalogue freelances
-                        ✅ Messagerie de base
-                        ❌ Mise en avant du profil
-                        ❌ Statistiques de visibilité
-                        ❌ Support prioritaire
-                    </p>
-                    <a href="#">Commencer gratuitement</a>
-                </div>
+            <div class="container">
+                <div class="row my-5 mx-auto g-1">
+                    <div class="col-12 col-md-4 col-sm-12 mt-4">
+                        <div class="bg-light rounded-3 border border-2 py-5 px-4 ">
+                            <div>
+                                <h6 class="fw-bold mb-0 fs-4">PLAN GRATUIT</h6>
+                                <p class="py-3">Idéal pour démarrer et découvrir la plateforme.</p>
+                                <div class="d-flex flex-column">
+                                    <a class="btn btn-primary" href="#">Commencer gratuitement</a>
+                                    <strong class="py-3">
+                                        <data class="fs-1" value="0">0</data>FCFA / mois
+                                    </strong>
+                                </div>
+                            </div>
+                            <p>
+                                ✔️ Création de profil public <br>
+                                ✔️ 3 candidatures par mois <br>
+                                ✔️ Accès au catalogue freelances <br>
+                                ✔️ Messagerie de base <br>
+                                ❌ Mise en avant du profil <br>
+                                ❌ Statistiques de visibilité <br>
+                                ❌ Support prioritaire <br>
+                            </p>
+                        </div>
+                    </div>
 
-                <div>
-                    <h3>PLAN PRO — 9 900 FCFA / mois</h3>
-                    <p>
-                        ✅ Tout ce qui est dans Gratuit
-                        ✅ Candidatures illimitées
-                        ✅ Profil mis en avant dans les résultats
-                        ✅ Badge "Pro Vérifié" sur votre profil
-                        ✅ Statistiques détaillées (vues, clics)
-                        ✅ Support par email sous 24h
-                        ❌ Manager de compte dédié
-                    </p>
-                    <a href="#">Passer au plan Pro</a>
-                </div>
+                    <div class="col-12 col-md-4 col-sm-12">
+                        <div class="bg-light rounded-3 border border-2 border-primary py-5 px-4 tarifpopulaire">
+                            <div>
+                                <div class="d-flex align-items-center">
+                                    <h6 class="fw-bold mb-0 fs-4">PLAN PRO</h6>
+                                    <strong class="badge rounded-2 text-white mx-3 bg-primary ">
+                                        Le plus populaire
+                                    </strong>
+                                </div>
+                                <p class="py-3">Pour maximiser votre visibilité et multiplier les opportunités.</p>
+                                <div class="d-flex flex-column">
+                                    <a class="btn btn-primary" href="#">Passer au plan Pro</a>
+                                    <strong class="py-3">
+                                        <data class="fs-1" value="9900">9 900</data>FCFA / mois
+                                    </strong>
+                                </div>
+                            </div>
+                            <p class="pb-5">
+                                ✔️ Tout ce qui est dans Gratuit <br>
+                                ✔️ Candidatures illimitées <br>
+                                ✔️ Profil mis en avant dans les résultats <br>
+                                ✔️ Badge "Pro Vérifié" sur votre profil <br>
+                                ✔️ Statistiques détaillées (vues, clics) <br>
+                                ✔️ Support par email sous 24h <br>
+                                ❌ Manager de compte dédié <br>
+                            </p>
+                        </div>
+                    </div>
 
-                <div>
-                    <h3>PLAN ENTREPRISE — 49 900 FCFA / mois</h3>
-                    <p>
-                        ✅ Tout ce qui est dans Pro
-                        ✅ Publication illimitée de missions
-                        ✅ Accès aux profils "Talent Premium"
-                        ✅ Tableau de bord équipe (jusqu'à 10 users)
-                        ✅ Contrats et facturation intégrés
-                        ✅ Manager de compte dédié
-                        ✅ SLA et support 7j/7
-                    </p>
-                    <a href="#">Contacter l'équipe commerciale</a>
+                    <div class="col-12 col-md-4 col-sm-12 mt-4">
+                        <div class="bg-light rounded-3 border border-2 py-5 px-4">
+                            <div>
+                                <h6 class="fw-bold mb-0 fs-4">PLAN ENTREPRISE</h6>
+                                <p class="py-3">Une solution complète pour recruter efficacement.</p>
+                                <div class="d-flex flex-column">
+                                    <a class="btn btn-primary" href="#">Contacter l'équipe commerciale</a>
+                                    <strong class="py-3">
+                                        <data class="fs-1" value="49900">49 900</data>FCFA / mois
+                                    </strong>
+                                </div>
+                            </div>
+                            <p>
+                                ✔️ Tout ce qui est dans Pro <br>
+                                ✔️ Publication illimitée de missions <br>
+                                ✔️ Accès aux profils "Talent Premium" <br>
+                                ✔️ Tableau de bord équipe (jusqu'à 10 users) <br>
+                                ✔️ Contrats et facturation intégrés <br>
+                                ✔️ Manager de compte dédié <br>
+                                ✔️ SLA et support 7j/7 <br>
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
         <section>
-            <div>
-                <h2>FAQ</h2>
-                <div>
-                    <div>
-                        <h3>
-                            <button>Puis-je changer de plan à tout moment ?</button>
-                        </h3>
-                        <p>
-                            Oui, vous pouvez upgrader ou downgrader votre abonnement
-                            à tout moment depuis votre tableau de bord. Le changement
-                            prend effet immédiatement et la facturation est ajustée au prorata.
-                        </p>
+            <div class="container mat mab">
+                <h4 class="text-center m-5">Questions fréquentes</h4>
+                <div class="accordion mat" id="accordionfaq">
+                    <div class="accordion-item mb-3 mt-5">
+                        <h6 class="accordion-header">
+                            <button class="accordion-button fs-6 border-primary fw-bold text-black" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#q1">Puis-je changer de plan à tout moment
+                                ?</button>
+                        </h6>
+                        <div class="accordion-collapse collapse " data-bs-parent="#accordionfaq" id="q1">
+                            <div class="accordion-body">
+                                Oui, vous pouvez upgrader ou downgrader votre abonnement
+                                à tout moment depuis votre tableau de bord. Le changement
+                                prend effet immédiatement et la facturation est ajustée au prorata.
+                            </div>
+                        </div>
                     </div>
 
-                    <div>
-                        <h3>
-                            <button>Comment fonctionne la protection des paiements ?</button>
-                        </h3>
-                        <p>
-                            AfriTalent utilise un système d'escrow (séquestre).
-                            L'entreprise dépose les fonds avant le début de la mission.
-                            Ils ne sont débloqués vers le freelance qu'une fois le livrable
-                            validé par les deux parties.
-                        </p>
+                    <div class="accordion-item mb-3">
+                        <h6 class="accordion-header">
+                            <button class="accordion-button fs-6 border-primary fw-bold text-black" data-bs-target="#q2" type="button"
+                                data-bs-toggle="collapse">Comment fonctionne la protection des paiements ?</button>
+                        </h6>
+                        <div class="accordion-collapse collapse " data-bs-parent="#accordionfaq" id="q2">
+                            <div class="accordion-body">
+                                AfriTalent utilise un système d'escrow (séquestre).
+                                L'entreprise dépose les fonds avant le début de la mission.
+                                Ils ne sont débloqués vers le freelance qu'une fois le livrable
+                                validé par les deux parties.
+                            </div>
+                        </div>
                     </div>
 
-                    <div>
-                        <h3>Quels modes de paiement acceptez-vous ?</h3>
-                        <p>
-                            Nous acceptons les paiements par carte bancaire (Visa, Mastercard),
-                            Mobile Money (Orange Money, Wave, MTN MoMo) et virement bancaire
-                            pour les entreprises.
-                        </p>
+                    <div class="accordion-item mb-3">
+                        <h6 class="accordion-header">
+                            <button class="accordion-button fs-6 border-primary fw-bold text-black" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#q3">
+                                Quels modes de paiement acceptez-vous ?
+                            </button>
+                        </h6>
+                        <div class="accordion-collapse collapse" id="q3" data-bs-parent="#accordionfaq">
+                            <div class="accordion-body">
+                                Nous acceptons les paiements par carte bancaire (Visa, Mastercard),
+                                Mobile Money (Orange Money, Wave, MTN MoMo) et virement bancaire
+                                pour les entreprises.
+                            </div>
+                        </div>
                     </div>
 
-                    <div>
-                        <h3>Puis-je travailler avec des clients hors d'Afrique ?</h3>
-                        <p>
-                            Absolument. AfriTalent permet aux freelances africains de
-                            collaborer avec des clients du monde entier. Les paiements
-                            internationaux sont gérés via notre partenaire de paiement sécurisé.
-                        </p>
+                    <div class="accordion-item  mb-3">
+                        <h6 class="accordion-header">
+                            <button class="accordion-button border-primary fs-6 fw-bold text-black" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#q4">Puis-je
+                                travailler avec des clients hors d'Afrique ?</button>
+                        </h6>
+                        <div class="accordion-collapse collapse " id="q4" data-bs-parent="#accordionfaq">
+                            <div class="accordion-body">
+                                Absolument. AfriTalent permet aux freelances africains de
+                                collaborer avec des clients du monde entier. Les paiements
+                                internationaux sont gérés via notre partenaire de paiement sécurisé.
+                            </div>
+                        </div>
                     </div>
 
-                    <div>
-                        <h3>Que se passe-t-il en cas de litige avec un client ?</h3>
-                        <p>
-                            AfriTalent dispose d'une équipe de médiation dédiée.
-                            En cas de conflit, vous pouvez ouvrir un ticket de litige.
-                            Notre équipe intervient sous 48h pour trouver une solution équitable.
-                        </p>
+                    <div class="accordion-item mb-3">
+                        <h6 class="accordion-header">
+                            <button class="accordion-button fs-6 border-primary fw-bold text-black" data-bs-toggle="collapse"
+                                data-bs-target="#q5" type="button">Que se passe-t-il en cas de litige avec un client
+                                ?</button>
+                        </h6>
+                        <div class="" id="q5">
+                            <div class="accordion-body collapse " data-bs-parent="#accordionfaq">
+                                AfriTalent dispose d'une équipe de médiation dédiée.
+                                En cas de conflit, vous pouvez ouvrir un ticket de litige.
+                                Notre équipe intervient sous 48h pour trouver une solution équitable.
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
     </main>
-
+    
     <footer>
-        <div>
-            <!-- a propos -->
-            <div>
-                <a href="#">
-                    <img src="image/logo.png" alt="Afritalent">
-                    <span>AfriTalent</span>
-                </a>
-                <p>
-                    AfriTalent connecte les freelances tech africains aux entreprises
-                    du continent et du monde entier. Talent. Confiance. Croissance.
-                </p>
-                <div>
-                    <div>
-                        <i class="bi bi-tiktok"></i>
+        <div class="container-fluid">
+            <div class="container ">
+                <div class="row mt-4 pt-5">
+                    <!-- a propos -->
+                    <div class="col-12 col-lg-3 col-md-4">
+                        <a href="#" class="navbar-brand">
+                            <img src="image/logo.png" alt="Afritalent">
+                            <!-- <span class="text-primary">AfriTalent</span> -->
+                        </a>
+                        <p class="my-3">
+                            AfriTalent connecte les freelances tech africains aux entreprises
+                            du continent et du monde entier. Talent. Confiance. Croissance.
+                        </p>
+                        <div class="d-flex gap-3 liensociale">
+                            <a href="#" class="fs-4 p-1 rounded-circle text-white">
+                                <i class="bi bi-tiktok"></i>
+                            </a>
+                            <a href="#" class="fs-4 p-1 rounded-circle text-white">
+                                <i class="bi bi-discord"></i>
+                            </a>
+                            <a href="#" class="fs-4 p-1 rounded-circle text-white">
+                                <i class="bi bi-facebook"></i>
+                            </a>
+                            <a href="#" class="fs-4 p-1 rounded-circle text-white">
+                                <i class="bi bi-twitter-x"></i>
+                            </a>
+                            <a href="#" class="fs-4 p-1 rounded-circle text-white">
+                                <i class="bi bi-linkedin"></i>
+                            </a>
+                        </div>
                     </div>
-                    <div>
-                        <i class="bi bi-discord"></i>
-                    </div>
-                    <div>
-                        <i class="bi bi-facebook"></i>
-                    </div>
-                    <div>
-                        <i class="bi bi-twitter-x"></i>
-                    </div>
-                </div>
-            </div>
 
-            <!-- Liens utiles -->
-            <div>
-                <h5>Liens utiles</h5>
-                <ul>
-                    <li><a href="index.html">Accueil</a></li>
-                    <li><a href="#">Tarifs</a></li>
-                    <li><a href="about.html">À propos</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </div>
+                    <!-- Liens utiles -->
+                    <div class="col-12 col-lg-3 col-md-4">
+                        <h5 class="fs-4 fw-bold mb-4">Liens utiles</h5>
+                        <ul class="list-unstyled animationfooter d-flex flex-column gap-3">
+                            <li><a href="index.html">Accueil</a></li>
+                            <li><a href="freelances.html" target="_blank">Freelances</a></li>
+                            <li><a href="#">Tarifs</a></li>
+                            <li><a href="about.html">À propos</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
 
-            <!-- Ressources -->
-            <div>
-                <h5>Ressources</h5>
-                <ul>
-                    <li><a href="#">Guide du freelance débutant</a></li>
-                    <li><a href="#">Rédiger un bon profil</a></li>
-                    <li><a href="#">Trouver vos premiers clients</a></li>
-                    <li><a href="#">FAQ</a></li>
-                    <li><a href="#">Actualités tech</a></li>
-                    <li><a href="#">Conditions d'utilisation</a></li>
-                    <li><a href="#">Politique de confidentialité</a></li>
-                </ul>
-            </div>
-            <div>
-                <div>
-                    <h5>Contact</h5>
-                    <address>
-                        <p>📧 contact@afritalent.africa</p>
-                        <p>📞 +221 33 800 00 00</p>
-                        <p>📍 Dakar Plateau, Sénégal</p>
-                    </address>
-                </div>
-            </div>
-            <div>
-                <div>
-                    <p>© 2026 AfriTalent — Tous droits réservés.</p>
+                    <!-- Ressources -->
+                    <div class="col-12 col-lg-3 col-md-4">
+                        <h5 class="fs-4 fw-bold mb-4">Ressources</h5>
+                        <ul class="list-unstyled animationfooter d-flex flex-column gap-3">
+                            <li><a href="#" class="py-2">Guide du freelance débutant</a></li>
+                            <li><a href="#" class="py-2">Rédiger un bon profil</a></li>
+                            <li><a href="#" class="py-2">Trouver vos premiers clients</a></li>
+                            <li><a href="#" class="py-2">FAQ</a></li>
+                            <li><a href="#" class="py-2">Blog & Actualités tech</a></li>
+                            <li><a href="#" class="py-2">Conditions d'utilisation</a></li>
+                            <li><a href="#" class="py-5">Politique de confidentialité</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-lg-3 col-md-4">
+                        <div>
+                            <h5 class="fs-4 fw-bold mb-4">Contact</h5>
+                            <address>
+                                <p><strong>Email :</strong><br> contact@afritalent.africa</p>
+                                <p><strong>Téléphone :</strong><br> +221 33 800 00 00</p>
+                                <p><strong>Adresse :</strong><br> Dakar Plateau, Sénégal</p>
+                            </address>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="text-center mt-4 border-1 pt-4 border-top">
+                            <p>© 2026 AfriTalent — Tous droits réservés.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </footer>
-    <div>
-        <button>^</button>
+    <div class="fixed-bottom d-flex">
+        <!-- <button class="ms-auto bg-transparent fs-1 border-0 fw-bold "> -->
+        <a class="ms-auto bg-transparent fs-1 border-0 fw-bold mx-5 my-3 text-black " href="#"><i
+                class="bi bi-arrow-up"></i></a>
+        <!-- </button> -->
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
