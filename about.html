@@ -8,10 +8,11 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
-    <link rel="icon" href="image/logo.png" type="image/png">
+    <link rel="icon" href="image/iconelogo.png" type="image/png">
 </head>
 
 <body>
+    <!-- ====header site avec menu navigation -->
     <header>
         <nav class="navbar navbar-expand-lg mt-3 shadow mx-auto navbar-light rounded-4 bg-light fixed-top ">
             <div class="container">
@@ -29,16 +30,17 @@
                 <div class="collapse navbar-collapse" id="navMenu">
                     <!-- lien de menu  -->
                     <ul class="navbar-nav mx-auto">
-                        <li class="nav-item"><a class="nav-link active" href="index.html">Accueil</a></li>
-                        <li class="nav-item"><a class="nav-link" href="freelances.html">Freelances</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+                        <li class="nav-item"><a class="nav-link" href="freelances.html">Freelances</a>
+                        </li>
                         <li class="nav-item"><a class="nav-link" href="tarifs.html">Tarifs</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">À propos</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="#">À propos</a></li>
                         <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
                         <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                     </ul>
-                    <li class="nav-item rounded-2 btn-primary list-unstyled px-2 mx-3">
-                        <a class="nav-link text-white fw-bold text-dark" href="#">Rejoindre AfriTalent</a>
-                    </li>
+                    <div class="nav-item rounded-2 btn-primary list-unstyled px-2 mx-3">
+                        <a class="nav-link text-white fw-bold text-dark" target="_blank" href="auth.html">Rejoindre AfriTalent</a>
+                    </div>
                     <!-- bouton rejoindre et darkmod  -->
                     <button class="bg-transparent fs-4 px-1 border-0">
                         <i class="bi bi-moon-stars-fill"></i>
@@ -49,6 +51,7 @@
     </header>
 
     <main>
+        <!-- ===section hero ==== -->
         <section>
             <div class="container my-5">
                 <div class="row align-items-center px-5 g-5 my-5">
@@ -69,6 +72,7 @@
         </section>
 
         <section>
+            <!-- ===animation dans les pays  disponible ====-->
             <div class="container mat mab">
                 <div class="overflow-hidden">
                     <div class="pays d-flex gap-5 fw-bold text-primary fs-1 py-5">
@@ -107,6 +111,7 @@
         </section>
 
         <section>
+            <!-- ===histoire de afritalent ==== -->
             <div class="container">
                 <span class="badge bg-primary mx-4">Notre histoires</span>
                 <div class="bg-white mt-4 py-5 rounded-5">
@@ -128,6 +133,8 @@
                             </p>
                         </div>
                     </div>
+
+                    <!-- ====etape histoire=== -->
                     <div class="etap-histoire mx-4">
                         <div class="etap-hist p-4 rounded-4">
                             <h6 class="fs-5 fw-bold">2022 — Naissance</h6>
@@ -150,8 +157,9 @@
             </div>
         </section>
 
+        <!---===section equipe sous forme de card === -->
         <section>
-            <div class="py-5">
+            <div class="py-5 mab">
                 <div class="container">
                     <div class="row g-4 mat">
                         <h2 class="text-center pb-5">L’équipe dirigeante</h2>
@@ -255,80 +263,80 @@
             </div>
         </section>
 
+        <!--===== valeur de afitenlent fait avec des bento ===== -->
         <section>
-            <div class="py-5 d-flex justify-content-center flex-column">
+            <div class="py-5 d-flex justify-content-center flex-column mat mab">
                 <div class="container">
                     <h2 class="mb-5 text-center fw-bold fs-4">NOS VALEURS</h2>
-                    <div class="row g-4 justify-content-center my-4">
-                        <div class="col-12 col-md-6 col-lg-8 ">
-                            <div class="shadow bg-primary text-white rounded-5 valeur h-100 p-4">
-                                <div class="d-flex align-items-center gap-5">
-                                    <img class="py-5" src="image/idee.png" alt="Innovation">
-                                    <h5 class="fw-bold tittel">Innovation</h5>
-                                </div>
+
+                    <div class="bentoabout1">
+
+                        <div class="big-about shadow bg-primary text-white rounded-5 valeur p-4">
+                            <div class="d-flex align-items-center gap-5">
+                                <img class="py-5" src="image/idee.png" alt="Innovation">
+                                <h5 class="fw-bold tittel">Innovation</h5>
+                            </div>
+                            <p>
+                                Nous repoussons constamment les limites pour offrir des
+                                outils modernes adaptés aux réalités africaines.
+                            </p>
+                        </div>
+
+                        <div class="card-simple1">
+                            <div class="text-center shadow  rounded-5 valeur p-4">
+                                <img src="image/accessibilite.png" alt="Accessibilité">
+                                <h5 class="fw-bold">Accessibilité</h5>
                                 <p>
-                                    Nous repoussons constamment les limites pour offrir des
-                                    outils modernes adaptés aux réalités africaines.
+                                    Chaque talent mérite une chance, accessible partout.
                                 </p>
                             </div>
                         </div>
 
-                        <div class=" col-6 col-md-4 col-lg-4 d-flex flex-column">
-                            <div class="">
-                                <div class="text-center shadow  rounded-5 valeur h-100 p-4">
-                                    <img src="image/accessibilite.png" alt="Accessibilité">
-                                    <h5 class="fw-bold">Accessibilité</h5>
-                                    <p>
-                                        Chaque talent mérite une chance, accessible partout.
-
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div class="mt-3">
-                                <div class="text-center shadow  rounded-5 valeur h-100 p-4">
-                                    <img src="image/arrows-down-to-people-solid-full (1).svg" alt="Communauté frelance">
-                                    <h5 class="fw-bold">Communauté</h5>
-                                    <p>
-                                        AfriTalent est une communauté fondée sur l’entraide entre professionnels.
-                                    </p>
-                                </div>
+                        <div class="card-simple2">
+                            <div class="text-center shadow  rounded-5 valeur p-4">
+                                <img src="image/arrows-down-to-people-solid-full (1).svg" alt="Communauté frelance">
+                                <h5 class="fw-bold">Communauté</h5>
+                                <p>
+                                    AfriTalent est une communauté fondée sur l’entraide entre professionnels.
+                                </p>
                             </div>
                         </div>
+
                     </div>
                 </div>
             </div>
         </section>
 
         <section>
+            <!-- ====bento des chiffre de vafritalent ====== -->
             <div class="py5 mab">
                 <div class="container">
                     <h3 class="fs-1 fw-bold text-center my-5">Chiffres clés</h3>
                     <div class="row">
                         <div class="col-12 col-lg-4 col-md-4">
                             <div class="rounded-5 shadow my-4 d-flex py-5 flex-column align-items-center">
-                                <data class="fw-bold fs-1" value="2500">29</data>Pays représentés
+                                <data class="fw-bold fs-1" value="2500">0</data>Pays représentés
                             </div>
                         </div>
                         <div class="col-12 col-lg-8 col-md-8">
                             <div
                                 class="rounded-5 shadow my-4 bg-primary text-white d-flex py-5 flex-column align-items-center">
-                                <data class="fw-bold fs-1" value="2500">2 500</data>+ Freelances actifs
+                                <data class="fw-bold fs-1" value="2500">0</data>+ Freelances actifs
                             </div>
                         </div>
                         <div class="col-12 col-lg-4 col-md-6">
                             <div class="rounded-5 shadow my-4 d-flex py-5 flex-column align-items-center">
-                                <data class="fw-bold fs-1" value="800">800</data>+ Entreprises partenaires
+                                <data class="fw-bold fs-1" value="800">0</data>+ Entreprises partenaires
                             </div>
                         </div>
                         <div class="col-12 col-lg-4 col-md-6">
                             <div class="rounded-5 shadow my-4 d-flex py-5 flex-column align-items-center">
-                                <data class="fw-bold fs-1" value="12000">12 000</data>+ Missions réalisées
+                                <data class="fw-bold fs-1" value="12000">0</data>+ Missions réalisées
                             </div>
                         </div>
                         <div class="col-12 col-lg-4 col-md-6">
                             <div class="rounded-5 shadow my-4 py-5 d-flex flex-column align-items-center">
-                                <data class="fw-bold fs-1" value="99">99</data>% Taux de satisfaction
+                                <data class="fw-bold fs-1" value="99">0</data>% Taux de satisfaction
                             </div>
                         </div>
                     </div>
@@ -346,7 +354,6 @@
                     <div class="col-12 col-lg-3 col-md-4">
                         <a href="#" class="navbar-brand">
                             <img src="image/logo.png" alt="Afritalent">
-                            <!-- <span class="text-primary">AfriTalent</span> -->
                         </a>
                         <p class="my-3">
                             AfriTalent connecte les freelances tech africains aux entreprises
@@ -390,9 +397,9 @@
                         <ul class="list-unstyled animationfooter d-flex flex-column gap-3">
                             <li><a href="#" class="py-2">Guide du freelance débutant</a></li>
                             <li><a href="#" class="py-2">Rédiger un bon profil</a></li>
-                            <li><a href="#" class="py-2">Trouver vos premiers clients</a></li>
-                            <li><a href="#" class="py-2">FAQ</a></li>
-                            <li><a href="#" class="py-2">Blog & Actualités tech</a></li>
+                            <li><a href="freelances.html" class="py-2">Trouver vos premiers clients</a></li>
+                            <li><a href="index.html" class="py-2">FAQ</a></li>
+                            <li><a href="blog.html" class="py-2">Blog & Actualités tech</a></li>
                             <li><a href="#" class="py-2">Conditions d'utilisation</a></li>
                             <li><a href="#" class="py-5">Politique de confidentialité</a></li>
                         </ul>

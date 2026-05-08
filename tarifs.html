@@ -8,10 +8,11 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
-    <link rel="icon" href="image/logo.png" type="image/png">
+    <link rel="icon" href="image/iconelogo.png" type="image/png">
 </head>
 
 <body>
+    <!-- ====header site avec menu navigation -->
     <header>
         <nav class="navbar navbar-expand-lg mt-3 shadow mx-auto navbar-light rounded-4 bg-light fixed-top ">
             <div class="container">
@@ -29,17 +30,17 @@
                 <div class="collapse navbar-collapse" id="navMenu">
                     <!-- lien de menu  -->
                     <ul class="navbar-nav mx-auto">
-                        <li class="nav-item"><a class="nav-link active" href="index.html">Accueil</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
                         <li class="nav-item"><a class="nav-link" href="freelances.html">Freelances</a>
                         </li>
-                        <li class="nav-item"><a class="nav-link" href="#">Tarifs</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="#">Tarifs</a></li>
                         <li class="nav-item"><a class="nav-link" href="about.html">À propos</a></li>
                         <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
                         <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                     </ul>
-                    <li class="nav-item rounded-2 btn-primary list-unstyled px-2 mx-3">
-                        <a class="nav-link text-white fw-bold text-dark" href="#">Rejoindre AfriTalent</a>
-                    </li>
+                    <div class="nav-item rounded-2 btn-primary list-unstyled px-2 mx-3">
+                        <a class="nav-link text-white fw-bold text-dark" target="_blank" href="auth.html">Rejoindre AfriTalent</a>
+                    </div>
                     <!-- bouton rejoindre et darkmod  -->
                     <button class="bg-transparent fs-4 px-1 border-0">
                         <i class="bi bi-moon-stars-fill"></i>
@@ -49,6 +50,7 @@
         </nav>
     </header>
     <main>
+        <!-- ===hero tarifs  === -->
         <section>
             <div class="container vh-30 text-center mat">
                 <h1 class="fw-bold fs-3 p-2">Des tarifs simples et transparents.</h1>
@@ -60,8 +62,10 @@
         </section>
 
         <section>
+            <!-- ===different type de forfaits==== -->
             <div class="container">
                 <div class="row my-5 mx-auto g-1">
+                    <!-- taris 1 -->
                     <div class="col-12 col-md-4 col-sm-12 mt-4">
                         <div class="bg-light rounded-3 border border-2 py-5 px-4 ">
                             <div>
@@ -86,6 +90,7 @@
                         </div>
                     </div>
 
+                    <!-- tarifs 2 -->
                     <div class="col-12 col-md-4 col-sm-12">
                         <div class="bg-light rounded-3 border border-2 border-primary py-5 px-4 tarifpopulaire">
                             <div>
@@ -115,6 +120,7 @@
                         </div>
                     </div>
 
+                    <!-- tarifs 3 -->
                     <div class="col-12 col-md-4 col-sm-12 mt-4">
                         <div class="bg-light rounded-3 border border-2 py-5 px-4">
                             <div>
@@ -142,6 +148,7 @@
             </div>
         </section>
 
+        <!-- foire au question -->
         <section>
             <div class="container mat mab">
                 <h4 class="text-center m-5">Questions fréquentes</h4>
@@ -163,8 +170,9 @@
 
                     <div class="accordion-item mb-3">
                         <h6 class="accordion-header">
-                            <button class="accordion-button fs-6 border-primary fw-bold text-black" data-bs-target="#q2" type="button"
-                                data-bs-toggle="collapse">Comment fonctionne la protection des paiements ?</button>
+                            <button class="accordion-button fs-6 border-primary fw-bold text-black" data-bs-target="#q2"
+                                type="button" data-bs-toggle="collapse">Comment fonctionne la protection des paiements
+                                ?</button>
                         </h6>
                         <div class="accordion-collapse collapse " data-bs-parent="#accordionfaq" id="q2">
                             <div class="accordion-body">
@@ -209,8 +217,9 @@
 
                     <div class="accordion-item mb-3">
                         <h6 class="accordion-header">
-                            <button class="accordion-button fs-6 border-primary fw-bold text-black" data-bs-toggle="collapse"
-                                data-bs-target="#q5" type="button">Que se passe-t-il en cas de litige avec un client
+                            <button class="accordion-button fs-6 border-primary fw-bold text-black"
+                                data-bs-toggle="collapse" data-bs-target="#q5" type="button">Que se passe-t-il en cas de
+                                litige avec un client
                                 ?</button>
                         </h6>
                         <div class="" id="q5">
@@ -225,7 +234,7 @@
             </div>
         </section>
     </main>
-    
+
     <footer>
         <div class="container-fluid">
             <div class="container ">
