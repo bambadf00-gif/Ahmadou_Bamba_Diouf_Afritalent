@@ -12,9 +12,12 @@
 </head>
 
 <body>
-    <!-- ====header site avec menu navigation -->
+    <!--=================================
+     ====header site avec menu navigation
+     ==================================== -->
     <header>
-        <nav class="navbar navbar-expand-lg mt-3 shadow mx-auto navbar-light rounded-4 bg-light fixed-top ">
+        <nav id="navbar"
+            class="navbar navbar-expand-lg mt-3 shadow mx-auto navbar-light rounded-4 menu-glace fixed-top">
             <div class="container">
                 <!-- logo  -->
                 <a class="navbar-brand" href="index.html">
@@ -38,10 +41,11 @@
                         <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                     </ul>
                     <div class="nav-item rounded-2 btn-primary list-unstyled px-2 mx-3">
-                        <a class="nav-link text-white fw-bold text-dark" target="_blank" href="auth.html">Rejoindre AfriTalent</a>
+                        <a class="nav-link text-secondary fs-6 text-light" target="_blank" href="auth.html">Rejoindre
+                            AfriTalent</a>
                     </div>
                     <!-- bouton rejoindre et darkmod  -->
-                    <button class="bg-transparent fs-4 px-1 border-0">
+                    <button id="darkmod" class="bg-transparent fs-4 px-1 border-0">
                         <i class="bi bi-moon-stars-fill"></i>
                     </button>
                 </div>
@@ -50,10 +54,13 @@
     </header>
 
     <main>
+        <!--=================================
+        acceuil blog
+        ================================= -->
         <section>
-            <div class="bloghome  d-flex align-items-center">
+            <div class="bloghome d-flex align-items-center">
                 <div class="container">
-                    <div class="mat text-white">
+                    <div class="mat text-secondary">
                         <h1 class="fw-bold p-3">AfriTalent Blog — Les talents africains à la une</h1>
                         <p class="p-3 fs-5">Conseils pour freelances, tendances tech africaines,
                             témoignages et guides pratiques.</p>
@@ -63,14 +70,16 @@
                 </div>
             </div>
         </section>
-
+        <!--=================================
+        article du blog
+        ==================================== -->
         <section>
             <div class="container">
                 <h3 class="text-center my-5 fw-bold fs-3">Articles recents</h3>
-                <div class="row mat mab g-5">
+                <div class="row g-5">
 
                     <article class="col-12 col-md-4 col-lg-4">
-                        <div class="card">
+                        <div class="card h-100 cardInServ">
                             <div class="articleentete"></div>
                             <div class="card-body">
                                 <h6 class="fs-6 text-danger py-2 pink">Business</h6>
@@ -84,7 +93,7 @@
                     </article>
 
                     <article class="col-12 col-md-4 col-lg-4">
-                        <div class="card">
+                        <div class="card h-100 cardInServ">
                             <div class="articleentete"></div>
                             <div class="card-body">
                                 <h6 class="fs-6 text-danger py-2 pink">Conseils freelancing</h6>
@@ -96,7 +105,7 @@
                     </article>
 
                     <article class="col-12 col-md-4 col-lg-4">
-                        <div class="card">
+                        <div class="card h-100 cardInServ">
                             <div class="articleentete"></div>
                             <div class="card-body">
                                 <h6 class="fs-6 text-danger py-2 pink">Conseils freelancing</h6>
@@ -108,7 +117,7 @@
                     </article>
 
                     <article class="col-12 col-md-4 col-lg-4">
-                        <div class="card">
+                        <div class="card h-100 cardInServ">
                             <div class="articleentete"></div>
                             <div class="card-body">
                                 <h6 class="fs-6 text-danger py-2 pink">Intelligence artificielle</h6>
@@ -121,7 +130,7 @@
                     </article>
 
                     <article class="col-12 col-md-4 col-lg-4">
-                        <div class="card">
+                        <div class="card h-100 cardInServ">
                             <div class="articleentete"></div>
                             <div class="card-body">
                                 <h6 class="fs-6 text-danger py-2 pink">Témoignages</h6>
@@ -134,7 +143,7 @@
                     </article>
 
                     <article class="col-12 col-md-4 col-lg-4">
-                        <div class="card">
+                        <div class="card h-100 cardInServ">
                             <div class="articleentete"></div>
                             <div class="card-body">
                                 <h6 class="fs-6 text-danger py-2 pink">Guides pratiques</h6>
@@ -147,7 +156,7 @@
                     </article>
 
                     <article class="col-12 col-md-4 col-lg-4">
-                        <div class="card">
+                        <div class="card h-100 cardInServ">
                             <div class="articleentete"></div>
                             <div class="card-body">
                                 <h6 class="fs-6 text-danger py-2 pink">Technologie</h6>
@@ -178,20 +187,20 @@
                             du continent et du monde entier. Talent. Confiance. Croissance.
                         </p>
                         <div class="d-flex gap-3 liensociale">
-                            <a href="#" class="fs-4 p-1 rounded-circle text-white">
-                                <i class="bi bi-tiktok"></i>
+                            <a href="#" class="fs-4 p-1 rounded-circle text-secondary">
+                                <i class="bi bi-tiktok text-black"></i>
                             </a>
-                            <a href="#" class="fs-4 p-1 rounded-circle text-white">
-                                <i class="bi bi-discord"></i>
+                            <a href="#" class="fs-4 p-1 rounded-circle text-secondary">
+                                <i class="bi bi-discord text-black"></i>
                             </a>
-                            <a href="#" class="fs-4 p-1 rounded-circle text-white">
-                                <i class="bi bi-facebook"></i>
+                            <a href="#" class="fs-4 p-1 rounded-circle text-secondary">
+                                <i class="bi bi-facebook text-black"></i>
                             </a>
-                            <a href="#" class="fs-4 p-1 rounded-circle text-white">
-                                <i class="bi bi-twitter-x"></i>
+                            <a href="#" class="fs-4 p-1 rounded-circle text-secondary">
+                                <i class="bi bi-twitter-x text-black"></i>
                             </a>
-                            <a href="#" class="fs-4 p-1 rounded-circle text-white">
-                                <i class="bi bi-linkedin"></i>
+                            <a href="#" class="fs-4 p-1 rounded-circle text-secondary">
+                                <i class="bi bi-linkedin text-black"></i>
                             </a>
                         </div>
                     </div>
@@ -242,14 +251,15 @@
         </div>
     </footer>
     <div class="fixed-bottom d-flex">
-        <!-- <button class="ms-auto bg-transparent fs-1 border-0 fw-bold "> -->
-        <a class="ms-auto bg-transparent fs-1 border-0 fw-bold mx-5 my-3 text-black " href="#"><i
-                class="bi bi-arrow-up"></i></a>
-        <!-- </button> -->
+        <button id="btnRemonte" class="ms-auto fs-4 px-2 py-1 bg-primary text-light rounded-3 border-0 fw-bold "><i
+                class="bi bi-arrow-up"></i>
+        </button>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+</body>
 
 </html>

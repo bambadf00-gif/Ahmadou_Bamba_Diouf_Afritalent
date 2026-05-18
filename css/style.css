@@ -1,89 +1,212 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
-/*titre*/
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 
-:root {
-    --font-titel: 'Playfair Display', serif;
-    --font-para: 'DM Sans', sans-serif;
-    --primary: #6316DB;
-    --bs-primary-rgb: 99, 22, 219;
-    --background: #F6F3F6;
-    --background-foot: #08031a;
-    --bs-background-rgb: 242, 236, 255;
-    --primary-dark: #3B1C63;
-    --bs-primary-dark-rgb: 59, 28, 99;
-    --white: #fff;
-}
+/* ==============================
+    afritalent css 
+============================== */
 
-body {
-    background-color: var(--background);
-    font-family: var(--font-para);
-}
-
-.tittel {
-    font-size: 4em;
-}
-
-/* bouton principale */
-.btn-primary {
-    background-color: var(--primary);
-    color: var(--white);
-    border: 1px solid var(--primary);
-    transition: 0.3s ease;
-}
-
-.btn-primary:hover {
-    background-color: var(--primary-dark);
-    border: 1px solid var(--primary);
-}
-.btn-primary:active {
-    background-color: var(--primary) !important;
-    border: 1px solid var(--primary) !important;
-    color: var(--white) !important; 
-}
-
-/* bouton secondaire */
-.btn-outline-primary {
-    background-color: transparent;
-    color: var(--text);
-    border: 1px solid var(--primary);
-    transition: 0.3s ease;
-}
-
-.btn-outline-primary:hover {
-    background-color: var(--primary-dark);
-    border: 1px solid var(--primary);
-}
-
-.btn-outline-primary:active {
-    background-color: var(--primary) !important;
-    border: 1px solid var(--primary) !important;
-    color: var(--white) !important; 
-}
-
-.form-control:focus{
-    border: #3B1C63;
-    box-shadow: 0 0.25rem var(--primary);
-}
-
-/* couleur des icone  */
-.bg-prymary-icone {
-    background-color: var(--background);
-    color: var(--primary-dark);
-}
-
+/* ----initialisation---- */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+/*  ==================
+        variable
+    ================== */
+:root {
+    /* ---police--- */
+    --font-titel: 'Playfair Display', serif;
+    --font-para: 'DM Sans', sans-serif;
+
+    /*---------------------
+            couleur 
+    -----------------------*/
+
+    --primary: #7c3aed;
+    --bs-primary-rgb: 124, 58, 237;
+
+    --bg-span-out: #ede9fe;
+    --bg-span-out-rgb: 237, 233, 254;
+
+    --bg: #ffffff;
+    --bs-bg-rgb: 255, 255, 255;
+
+    --card: #f9f9f9;
+    --card-rgb: 249, 249, 249;
+
+    --border: #e5e5e5;
+    /* --bs-success-rgb: 229, 229, 229; */
+
+    --text: #0a0a0a;
+
+    --text-muted: #737373;
+    --text-muted-rgb: 115, 115, 115;
+
+    --primary-dark: #a78bfa;
+}
+
+/* ======================
+    dark mod 
+========================= */
+
+body.dark {
+    --primary-dark: #a78bfa;
+
+    --bg-dark: #171717;
+
+    --card-dark: #1f1f1f;
+
+    --border: #2a2a2a;
+
+    --card-dark: #1f1f1f;
+
+    --text-dark: #f5f5f5;
+
+    --bs-navbar-bg: var(--bg-dark);
+
+    --text-muted: #a3a3a3;
+
+    background-color: var(--bg-dark);
+
+    color: var(--text-dark);
+
+}
+
+.navbar {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(20px);
+    transition: 0.3s ease;
+}
+
+body.dark .navbar {
+    background: transparent;
+    border: 1px solid var(--border);
+}
+
+body.dark h1,
+body.dark h2,
+body.dark h3,
+body.dark h4,
+body.dark h5 {
+    color: var(--text-dark);
+}
+
+body.dark p,
+body.dark span,
+body.dark a {
+    color: var(--text-muted);
+}
+
+body.dark footer,
+body.dark .service {
+    background-color: var(--card-dark);
+}
+
+
+body.dark .cardInServ {
+    background-color: var(--border);
+}
+
+body.dark .search {
+    background-color: var(--border);
+}
+
+body.dark .txtSpan {
+    background-color: var(--card);
+    color: var(--bg-dark);
+}
+
+body.dark .bg-free {
+    background: transparent;
+    color: var(--bg);
+}
+
+/* ==================================
+    animation de scrollY 
+====================================*/
+
+.navbar.scrollNavabar {
+    width: 88vw;
+    box-shadow: 0 0 200px var(--primary);
+}
+
+.card {
+    background: var(--card);
+}
+
+body {
+    background-color: var(--bg);
+    font-family: var(--font-para);
+    transition: all 0.3s ease;
+}
+
+.tittel {
+    font-size: 4em;
+}
+
+/* ===================================
+    btn principale et secondaire 
+===================================== */
+
+/* bouton principale */
+.btn-primary {
+    background-color: var(--primary);
+    color: var(--bg);
+    font-weight: bold;
+    border: 1px solid var(--border);
+    transition: 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: var(--primary);
+    box-shadow: inset 0 0 10px var(--bg);
+    border: 1px solid var(--primary);
+}
+
+.btn-primary:active {
+    background-color: var(--primary) !important;
+    border: 1px solid var(--primary) !important;
+}
+
+/* bouton secondaire */
+.btn-outline-primary {
+    background: transparent;
+    color: var(--primary);
+    border: 1px solid var(--primary);
+    transition: 0.3s ease;
+}
+
+.btn-outline-primary:hover {
+    background-color: transparent;
+    color: var(--primary);
+    box-shadow: inset 0 0 20px var(--primary);
+    border: 1px solid var(--primary);
+}
+
+.btn-outline-primary:active {
+    border: 1px solid var(--primary) !important;
+}
+
+.form-control:focus {
+    border: none;
+    box-shadow: 0 0.20rem var(--primary);
+}
+
+/* ===================
+taille et font fammily 
+====================== */
 h1,
 h2,
 h3,
 h4,
-h5,
-h6 {
+h5 {
+    color: var(--text);
     font-family: var(--font-titel);
 }
 
@@ -119,26 +242,59 @@ h4 {
     margin-bottom: 6rem;
 }
 
-/* Page d'acceuil*/
+.txtSpan {
+    background: var(--bg-span-out);
+    border: 1px solid var(--border);
+    color: var(--text);
+    font-size: .6em;
+}
+
+section {
+    padding: 3rem 0;
+}
+
+
+/* ====================
+Page d'acceuil
+=======================*/
+
 .navbar {
     width: 92vw;
 }
 
+.pHero {
+    font-family: var(--font-para);
+}
+
+.bc {
+    border-inline-end: 0.2px solid var(--border);
+}
+
+
 .imgprocess img {
     padding: 1rem 0;
-    width: 70px;
+    width: 35px;
 }
-.marq-aprv {
-    width: max-content;
-    animation: marque-index 8s linear infinite;
+
+.service {
+    background-color: var(--bg-span-out);
 }
 
 .marq-aprv img {
     height: 20px;
     object-fit: cover;
     flex-shrink: 0;
+    filter: brightness(0) saturate(100%) invert(30%);
 }
 
+.marq-aprv {
+    width: max-content;
+    animation: marque-index 30s linear infinite;
+}
+
+/* ------------------------------------------------
+bande defilant avec des img de marque 
+--------------------------------------------------- */
 @keyframes marque-index {
     from {
         transform: translateX(0);
@@ -150,21 +306,38 @@ h4 {
 
 }
 
+/* ---------------------------
+styl des icone type ippal
+------------------------------- */
+.imgprocess,
+.iconefonct {
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: .8rem;
+    background: linear-gradient(to bottom, rgba(112, 37, 233, .25), rgba(225, 225, 225, .50));
+}
 
 .bento-index {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(6, 1fr);
     gap: 1.5rem;
 
     grid-template-areas:
-        "card1 card1 card1 card1"
-        "card2 card2 card4 card4"
-        "card3 card3 card4 card4"
+        "card1 card1 card1 card1 card2 card2"
+        "card3 card3 card3 card4 card4 card4"
     ;
 }
 
 .card1 {
     grid-area: card1;
+}
+
+.card1>div {
+    color: var(--bg);
+    background: var(--primary);
 }
 
 .card2 {
@@ -175,8 +348,18 @@ h4 {
     grid-area: card3;
 }
 
+.card3>div {
+    color: var(--bg);
+    background: var(--text);
+}
+
 .card4 {
     grid-area: card4;
+}
+
+.card4>div {
+    color: var(--text);
+    background: var(--primary-dark);
 }
 
 @media (320px <=width <=480px) {
@@ -211,9 +394,7 @@ h4 {
 }
 
 
-.categorie img {
-    width: 5vw;
-}
+
 
 .categorie>div:hover {
     cursor: pointer;
@@ -222,15 +403,7 @@ h4 {
 }
 
 .iconefonct {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 1rem;
-    font-size: 1.5rem;
-    margin-top: 2rem;
-    width: 5vw;
-    height: 5vh;
-    padding: 1.5rem;
+    margin-top: 1.4rem;
 }
 
 .imgavis img {
@@ -243,23 +416,13 @@ h4 {
     height: 70vh;
 }
 
-.content {
-    max-width: var(--content-max);
-    margin: 0 auto;
-}
-
-.btn-max {
-    max-width: var(--btn-max);
-}
-
-
 /* animation */
 .process {
     transition: 0.3s ease;
 }
 
 .process:hover {
-    transform: scale(1.05);
+    transform: scale(1.02);
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
@@ -271,9 +434,21 @@ h4 {
     width: 5vw;
 }
 
-/* ====page frellence==== */
+/* ===========================================
+page frellence
+============================================== */
 .recherche::-webkit-scrollbar {
     display: none;
+}
+
+.bg-free {
+    background: transparent;
+}
+
+.search {
+    background-color: var(--bg-span-out);
+    z-index: 1000;
+    top: 5rem;
 }
 
 .recherche {
@@ -299,8 +474,11 @@ h4 {
 }
 
 
-/* ===Tarif ==== */
+/* ============================================
+ page Tarif 
+ ============================================== */
 .tarifpopulaire {
+    background-color: transparent;
     background: linear-gradient(to bottom, #6116db11, #6116db56);
 }
 
@@ -318,12 +496,12 @@ h4 {
     /* selection des btn accordion qui ne sont pas ferme */
 }
 
-/* ===about ==== */
+/* ===========================================
+page about 
+============================================== */
 .img-hom-about {
     width: 30vw;
 }
-
-
 
 .bentoabout1 {
     display: grid;
@@ -435,7 +613,9 @@ h4 {
 
 }
 
-/* ====blog=== */
+/* ====================================
+page blog
+======================================= */
 
 .bloghome {
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../image/blog.jpg');
@@ -464,32 +644,41 @@ h4 {
     text-decoration: underline;
 }
 
-/* ===contact=== */
+/* =====================================
+contact
+======================================== */
 .ifa {
     width: 100%;
     height: 100%;
 }
 
 
-/* =========page Authentification============ */
-.auth img{
+/* ===============================
+page Authentification
+================================= */
+.auth img {
     height: 20px;
 }
 
-/* footer */
+
+/* ============================
+footer
+=============================== */
 footer {
-    background-color: var(--background-foot);
+    border-top: .5px solid var(--border);
+    color: var(--text-night);
+    background-color: var(--bg-span-out);
 }
 
 footer p,
 footer a,
 footer address,
 footer span {
-    color: #fff;
+    color: var(--text);
 }
 
 footer h5 {
-    color: #fff;
+    color: var(--text);
 }
 
 .animationfooter a {
@@ -516,4 +705,17 @@ footer h5 {
     gap: 1.2rem;
 }
 
+/*=============================
+btn de romonte
+=============================== */
+#btnRemonte{
+    margin:2rem ;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.3s ease;
+}
 
+#btnRemonte.btnRmtAfficher{
+    pointer-events: auto;
+    opacity: 1;
+}

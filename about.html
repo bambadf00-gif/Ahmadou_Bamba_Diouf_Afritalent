@@ -12,9 +12,12 @@
 </head>
 
 <body>
-    <!-- ====header site avec menu navigation -->
+    <!--=================================
+     ====header site avec menu navigation
+     ==================================== -->
     <header>
-        <nav class="navbar navbar-expand-lg mt-3 shadow mx-auto navbar-light rounded-4 bg-light fixed-top ">
+        <nav id="navbar"
+            class="navbar navbar-expand-lg mt-3 shadow mx-auto navbar-light rounded-4 menu-glace fixed-top">
             <div class="container">
                 <!-- logo  -->
                 <a class="navbar-brand" href="index.html">
@@ -39,10 +42,11 @@
                         <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                     </ul>
                     <div class="nav-item rounded-2 btn-primary list-unstyled px-2 mx-3">
-                        <a class="nav-link text-white fw-bold text-dark" target="_blank" href="auth.html">Rejoindre AfriTalent</a>
+                        <a class="nav-link text-secondary fs-6 text-light" target="_blank" href="auth.html">Rejoindre
+                            AfriTalent</a>
                     </div>
                     <!-- bouton rejoindre et darkmod  -->
-                    <button class="bg-transparent fs-4 px-1 border-0">
+                    <button id="darkmod" class="bg-transparent fs-4 px-1 border-0">
                         <i class="bi bi-moon-stars-fill"></i>
                     </button>
                 </div>
@@ -51,7 +55,9 @@
     </header>
 
     <main>
-        <!-- ===section hero ==== -->
+        <!-- =========================
+         section hero 
+         ============================= -->
         <section>
             <div class="container my-5">
                 <div class="row align-items-center px-5 g-5 my-5">
@@ -72,8 +78,10 @@
         </section>
 
         <section>
-            <!-- ===animation dans les pays  disponible ====-->
-            <div class="container mat mab">
+            <!-- ==============================
+             animation dans les pays  disponible 
+             ==================================-->
+            <div class="container">
                 <div class="overflow-hidden">
                     <div class="pays d-flex gap-5 fw-bold text-primary fs-1 py-5">
                         <span>Sénégal</span>
@@ -111,10 +119,12 @@
         </section>
 
         <section>
-            <!-- ===histoire de afritalent ==== -->
+            <!-- =========================
+             histoire de afritalent 
+             ============================= -->
             <div class="container">
                 <span class="badge bg-primary mx-4">Notre histoires</span>
-                <div class="bg-white mt-4 py-5 rounded-5">
+                <div class="service mt-4 py-5 rounded-5">
                     <div class="row mab px-4">
                         <div class="col-12 col-lg-6 col-md-6">
                             <h2>Construits par
@@ -136,20 +146,20 @@
 
                     <!-- ====etape histoire=== -->
                     <div class="etap-histoire mx-4">
-                        <div class="etap-hist p-4 rounded-4">
-                            <h6 class="fs-5 fw-bold">2022 — Naissance</h6>
-                            <p>Création à Dakar. 50 freelances en bêta.</p>
+                        <div class="etap-hist p-4 rounded-4 bg-light">
+                            <h6 class="fs-5 fw-bold text-dark">2022 — Naissance</h6>
+                            <p class="text-muted">Création à Dakar. 50 freelances en bêta.</p>
                         </div>
-                        <div class="etap-hist p-4 rounded-4">
-                            <h6 class="fs-5 fw-bold">2023 — Expansion</h6>
-                            <p>12 pays, 500 freelances, 100 entreprises.</p>
+                        <div class="etap-hist p-4 rounded-4 bg-light">
+                            <h6 class="fs-5 fw-bold text-dark">2023 — Expansion</h6>
+                            <p class="text-muted">12 pays, 500 freelances, 100 entreprises.</p>
                         </div>
-                        <div class="etap-hist p-4 rounded-4">
-                            <h6 class="fs-5 fw-bold">2024 — Croissance</h6>
-                            <p>1 000 missions, paiements sécurisés.</p>
+                        <div class="etap-hist p-4 rounded-4 bg-light">
+                            <h6 class="fs-5 fw-bold text-dark">2024 — Croissance</h6>
+                            <p class="text-muted">1 000 missions, paiements sécurisés.</p>
                         </div>
-                        <div class="p-4 text-white rounded-4 histoire2025">
-                            <h6 class="fs-5 fw-bold">2025 — Accélération</h6>
+                        <div class="p-4 text-white rounded-4  histoire2025">
+                            <h6 class="fs-5 fw-bolds">2025 — Accélération</h6>
                             <p>2 500+ membres, 29 pays, Série A.</p>
                         </div>
                     </div>
@@ -157,14 +167,16 @@
             </div>
         </section>
 
-        <!---===section equipe sous forme de card === -->
+        <!---==================================
+        section equipe sous forme de card 
+        ======================================= -->
         <section>
-            <div class="py-5 mab">
+            <div class="">
                 <div class="container">
                     <div class="row g-4 mat">
                         <h2 class="text-center pb-5">L’équipe dirigeante</h2>
                         <div class="col-12 col-lg-3 col-md-6">
-                            <div class="card">
+                            <div class="card cardInServ">
                                 <img class="card-img-top" src="image/avis (5).jpg" alt="Amadou Sy Co-fondateur & CEO">
                                 <div class="card-body justify-content-center d-flex flex-column align-items-center">
                                     <h5 class="fw-bold card-title">Amadou Sy</h5>
@@ -188,7 +200,7 @@
                         </div>
 
                         <div class="col-12 col-lg-3 col-md-4">
-                            <div class="card">
+                            <div class="card cardInServ">
                                 <img class="card-img-top" src="image/avis (1).jpg" alt="Amadou Sy Co-fondateur & CEO">
                                 <div class="card-body justify-content-center d-flex flex-column align-items-center">
                                     <h5 class="fw-bold card-title">Fatoumata Camara</h5>
@@ -212,7 +224,7 @@
                         </div>
 
                         <div class="col-12 col-lg-3 col-md-4">
-                            <div class="card">
+                            <div class="card cardInServ">
                                 <img class="card-img-top" src="image/avis (6).jpg" alt="Amadou Sy Co-fondateur & CEO">
                                 <div class="card-body justify-content-center d-flex flex-column align-items-center">
                                     <h5 class="fw-bold card-title">Omar Niang</h5>
@@ -236,7 +248,7 @@
                         </div>
 
                         <div class="col-12 col-lg-3 col-md-4">
-                            <div class="card">
+                            <div class="card cardInServ">
                                 <img class="card-img-top" src="image/avis (3).jpg" alt="Amadou Sy Co-fondateur & CEO">
                                 <div class="card-body justify-content-center d-flex flex-column align-items-center">
                                     <h5 class="fw-bold card-title">Rokhaya Fall</h5>
@@ -263,9 +275,11 @@
             </div>
         </section>
 
-        <!--===== valeur de afitenlent fait avec des bento ===== -->
+        <!--=======================================
+         valeur de afitenlent fait avec des bento 
+         ===================================== -->
         <section>
-            <div class="py-5 d-flex justify-content-center flex-column mat mab">
+            <div class="py-5 d-flex justify-content-center flex-column">
                 <div class="container">
                     <h2 class="mb-5 text-center fw-bold fs-4">NOS VALEURS</h2>
 
@@ -274,16 +288,16 @@
                         <div class="big-about shadow bg-primary text-white rounded-5 valeur p-4">
                             <div class="d-flex align-items-center gap-5">
                                 <img class="py-5" src="image/idee.png" alt="Innovation">
-                                <h5 class="fw-bold tittel">Innovation</h5>
+                                <h5 class="fw-bold tittel text-light">Innovation</h5>
                             </div>
-                            <p>
+                            <p class="text-light">
                                 Nous repoussons constamment les limites pour offrir des
                                 outils modernes adaptés aux réalités africaines.
                             </p>
                         </div>
 
                         <div class="card-simple1">
-                            <div class="text-center shadow  rounded-5 valeur p-4">
+                            <div class="text-center shadow  rounded-5 valeur p-4 cardInServ">
                                 <img src="image/accessibilite.png" alt="Accessibilité">
                                 <h5 class="fw-bold">Accessibilité</h5>
                                 <p>
@@ -293,10 +307,10 @@
                         </div>
 
                         <div class="card-simple2">
-                            <div class="text-center shadow  rounded-5 valeur p-4">
+                            <div class="text-center shadow  rounded-5 valeur p-4 bg-light">
                                 <img src="image/arrows-down-to-people-solid-full (1).svg" alt="Communauté frelance">
-                                <h5 class="fw-bold">Communauté</h5>
-                                <p>
+                                <h5 class="fw-bold text-black">Communauté</h5>
+                                <p class="text-black">
                                     AfriTalent est une communauté fondée sur l’entraide entre professionnels.
                                 </p>
                             </div>
@@ -309,12 +323,12 @@
 
         <section>
             <!-- ====bento des chiffre de vafritalent ====== -->
-            <div class="py5 mab">
+            <div class="">
                 <div class="container">
                     <h3 class="fs-1 fw-bold text-center my-5">Chiffres clés</h3>
                     <div class="row">
                         <div class="col-12 col-lg-4 col-md-4">
-                            <div class="rounded-5 shadow my-4 d-flex py-5 flex-column align-items-center">
+                            <div class="rounded-5 shadow my-4 d-flex py-5 flex-column align-items-center cardInServ">
                                 <data class="fw-bold fs-1" value="2500">0</data>Pays représentés
                             </div>
                         </div>
@@ -325,17 +339,18 @@
                             </div>
                         </div>
                         <div class="col-12 col-lg-4 col-md-6">
-                            <div class="rounded-5 shadow my-4 d-flex py-5 flex-column align-items-center">
-                                <data class="fw-bold fs-1" value="800">0</data>+ Entreprises partenaires
+                            <div
+                                class="rounded-5 shadow my-4 d-flex py-5 flex-column align-items-center bg-light text-black">
+                                <data class="fw-bold fs-1 text-black" value="800">0</data>+ Entreprises partenaires
                             </div>
                         </div>
                         <div class="col-12 col-lg-4 col-md-6">
-                            <div class="rounded-5 shadow my-4 d-flex py-5 flex-column align-items-center">
+                            <div class="rounded-5 shadow my-4 d-flex py-5 flex-column align-items-center cardInServ">
                                 <data class="fw-bold fs-1" value="12000">0</data>+ Missions réalisées
                             </div>
                         </div>
                         <div class="col-12 col-lg-4 col-md-6">
-                            <div class="rounded-5 shadow my-4 py-5 d-flex flex-column align-items-center">
+                            <div class="rounded-5 shadow my-4 py-5 d-flex flex-column align-items-center cardInServ">
                                 <data class="fw-bold fs-1" value="99">0</data>% Taux de satisfaction
                             </div>
                         </div>
@@ -360,20 +375,20 @@
                             du continent et du monde entier. Talent. Confiance. Croissance.
                         </p>
                         <div class="d-flex gap-3 liensociale">
-                            <a href="#" class="fs-4 p-1 rounded-circle text-white">
-                                <i class="bi bi-tiktok"></i>
+                            <a href="#" class="fs-4 p-1 rounded-circle text-secondary">
+                                <i class="bi bi-tiktok text-black"></i>
                             </a>
-                            <a href="#" class="fs-4 p-1 rounded-circle text-white">
-                                <i class="bi bi-discord"></i>
+                            <a href="#" class="fs-4 p-1 rounded-circle text-secondary">
+                                <i class="bi bi-discord text-black"></i>
                             </a>
-                            <a href="#" class="fs-4 p-1 rounded-circle text-white">
-                                <i class="bi bi-facebook"></i>
+                            <a href="#" class="fs-4 p-1 rounded-circle text-secondary">
+                                <i class="bi bi-facebook text-black"></i>
                             </a>
-                            <a href="#" class="fs-4 p-1 rounded-circle text-white">
-                                <i class="bi bi-twitter-x"></i>
+                            <a href="#" class="fs-4 p-1 rounded-circle text-secondary">
+                                <i class="bi bi-twitter-x text-black"></i>
                             </a>
-                            <a href="#" class="fs-4 p-1 rounded-circle text-white">
-                                <i class="bi bi-linkedin"></i>
+                            <a href="#" class="fs-4 p-1 rounded-circle text-secondary">
+                                <i class="bi bi-linkedin text-black"></i>
                             </a>
                         </div>
                     </div>
@@ -424,14 +439,15 @@
         </div>
     </footer>
     <div class="fixed-bottom d-flex">
-        <!-- <button class="ms-auto bg-transparent fs-1 border-0 fw-bold "> -->
-        <a class="ms-auto bg-transparent fs-1 border-0 fw-bold mx-5 my-3 text-black " href="#"><i
-                class="bi bi-arrow-up"></i></a>
-        <!-- </button> -->
+        <button id="btnRemonte" class="ms-auto fs-4 px-2 py-1 bg-primary text-light rounded-3 border-0 fw-bold "><i
+                class="bi bi-arrow-up"></i>
+        </button>
     </div>
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>

@@ -12,9 +12,12 @@
 </head>
 
 <body>
-    <!-- ====header site avec menu navigation -->
+    <!--=================================
+     ====header site avec menu navigation
+     ==================================== -->
     <header>
-        <nav class="navbar navbar-expand-lg mt-3 shadow mx-auto navbar-light rounded-4 bg-light fixed-top ">
+        <nav id="navbar"
+            class="navbar navbar-expand-lg mt-3 shadow mx-auto navbar-light rounded-4 menu-glace fixed-top">
             <div class="container">
                 <!-- logo  -->
                 <a class="navbar-brand" href="index.html">
@@ -39,10 +42,11 @@
                         <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                     </ul>
                     <div class="nav-item rounded-2 btn-primary list-unstyled px-2 mx-3">
-                        <a class="nav-link text-white fw-bold text-dark" target="_blank" href="auth.html">Rejoindre AfriTalent</a>
+                        <a class="nav-link text-secondary fs-6 text-light" target="_blank" href="auth.html">Rejoindre
+                            AfriTalent</a>
                     </div>
                     <!-- bouton rejoindre et darkmod  -->
-                    <button class="bg-transparent fs-4 px-1 border-0">
+                    <button id="darkmod" class="bg-transparent fs-4 px-1 border-0">
                         <i class="bi bi-moon-stars-fill"></i>
                     </button>
                 </div>
@@ -50,9 +54,11 @@
         </nav>
     </header>
     <main>
-        <!-- ===hero tarifs  === -->
+        <!-- ===========================
+         hero tarifs  
+         =============================== -->
         <section>
-            <div class="container vh-30 text-center mat">
+            <div class="container text-center mt-5">
                 <h1 class="fw-bold fs-3 p-2">Des tarifs simples et transparents.</h1>
                 <h2 class="fs-6">
                     Choisissez le plan qui correspond à votre activité.
@@ -62,12 +68,14 @@
         </section>
 
         <section>
-            <!-- ===different type de forfaits==== -->
+            <!-- ==============================
+             different type de forfaits
+             ================================== -->
             <div class="container">
-                <div class="row my-5 mx-auto g-1">
+                <div class="row mx-auto g-1">
                     <!-- taris 1 -->
                     <div class="col-12 col-md-4 col-sm-12 mt-4">
-                        <div class="bg-light rounded-3 border border-2 py-5 px-4 ">
+                        <div class="bg-transparent rounded-3 border border-2 py-5 px-4 ">
                             <div>
                                 <h6 class="fw-bold mb-0 fs-4">PLAN GRATUIT</h6>
                                 <p class="py-3">Idéal pour démarrer et découvrir la plateforme.</p>
@@ -92,11 +100,11 @@
 
                     <!-- tarifs 2 -->
                     <div class="col-12 col-md-4 col-sm-12">
-                        <div class="bg-light rounded-3 border border-2 border-primary py-5 px-4 tarifpopulaire">
+                        <div class="rounded-3 border border-2 border-primary py-5 px-4 tarifpopulaire">
                             <div>
                                 <div class="d-flex align-items-center">
                                     <h6 class="fw-bold mb-0 fs-4">PLAN PRO</h6>
-                                    <strong class="badge rounded-2 text-white mx-3 bg-primary ">
+                                    <strong class="badge rounded-2 text-light mx-3 bg-primary ">
                                         Le plus populaire
                                     </strong>
                                 </div>
@@ -122,7 +130,7 @@
 
                     <!-- tarifs 3 -->
                     <div class="col-12 col-md-4 col-sm-12 mt-4">
-                        <div class="bg-light rounded-3 border border-2 py-5 px-4">
+                        <div class="bg-transparent rounded-3 border border-2 py-5 px-4">
                             <div>
                                 <h6 class="fw-bold mb-0 fs-4">PLAN ENTREPRISE</h6>
                                 <p class="py-3">Une solution complète pour recruter efficacement.</p>
@@ -148,9 +156,11 @@
             </div>
         </section>
 
-        <!-- foire au question -->
+        <!-- =========================
+         foire au question
+         ============================= -->
         <section>
-            <div class="container mat mab">
+            <div class="container">
                 <h4 class="text-center m-5">Questions fréquentes</h4>
                 <div class="accordion mat" id="accordionfaq">
                     <div class="accordion-item mb-3 mt-5">
@@ -250,20 +260,20 @@
                             du continent et du monde entier. Talent. Confiance. Croissance.
                         </p>
                         <div class="d-flex gap-3 liensociale">
-                            <a href="#" class="fs-4 p-1 rounded-circle text-white">
-                                <i class="bi bi-tiktok"></i>
+                            <a href="#" class="fs-4 p-1 rounded-circle text-secondary">
+                                <i class="bi bi-tiktok text-black"></i>
                             </a>
-                            <a href="#" class="fs-4 p-1 rounded-circle text-white">
-                                <i class="bi bi-discord"></i>
+                            <a href="#" class="fs-4 p-1 rounded-circle text-secondary">
+                                <i class="bi bi-discord text-black"></i>
                             </a>
-                            <a href="#" class="fs-4 p-1 rounded-circle text-white">
-                                <i class="bi bi-facebook"></i>
+                            <a href="#" class="fs-4 p-1 rounded-circle text-secondary">
+                                <i class="bi bi-facebook text-black"></i>
                             </a>
-                            <a href="#" class="fs-4 p-1 rounded-circle text-white">
-                                <i class="bi bi-twitter-x"></i>
+                            <a href="#" class="fs-4 p-1 rounded-circle text-secondary">
+                                <i class="bi bi-twitter-x text-black"></i>
                             </a>
-                            <a href="#" class="fs-4 p-1 rounded-circle text-white">
-                                <i class="bi bi-linkedin"></i>
+                            <a href="#" class="fs-4 p-1 rounded-circle text-secondary">
+                                <i class="bi bi-linkedin text-black"></i>
                             </a>
                         </div>
                     </div>
@@ -314,15 +324,15 @@
         </div>
     </footer>
     <div class="fixed-bottom d-flex">
-        <!-- <button class="ms-auto bg-transparent fs-1 border-0 fw-bold "> -->
-        <a class="ms-auto bg-transparent fs-1 border-0 fw-bold mx-5 my-3 text-black " href="#"><i
-                class="bi bi-arrow-up"></i></a>
-        <!-- </button> -->
+        <button id="btnRemonte" class="ms-auto fs-4 px-2 py-1 bg-primary text-light rounded-3 border-0 fw-bold "><i
+                class="bi bi-arrow-up"></i>
+        </button>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
