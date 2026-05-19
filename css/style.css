@@ -393,9 +393,6 @@ styl des icone type ippal
     }
 }
 
-
-
-
 .categorie>div:hover {
     cursor: pointer;
     transform: translateY(-10px);
@@ -718,4 +715,18 @@ btn de romonte
 #btnRemonte.btnRmtAfficher{
     pointer-events: auto;
     opacity: 1;
+}
+/*=====================================================
+Les sections qui apparaissent en fondu
+===================================================== */
+
+section{
+    opacity: 0;
+    transform: translateY(100px);
+    transition: opacity 0.6s ease-out , 0.6s ease-in-out;
+}
+
+section.visbleSection{
+    opacity: 1;
+    transform: translateY(0);
 }
