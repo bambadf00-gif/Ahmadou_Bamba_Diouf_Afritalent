@@ -78,13 +78,20 @@
                 <div class="container-fluid">
                     <div
                         class="recherche overflow-auto align-items-center p-3 d-flex flex-nowrap gap-3 justify-content-around">
-                        <button class="btn btn-outline-primary flex-shrink-0">Tous</button>
-                        <button class="btn btn-outline-primary flex-shrink-0">Développement Web</button>
-                        <button class="btn btn-outline-primary flex-shrink-0">Design UI/UX</button>
-                        <button class="btn btn-outline-primary flex-shrink-0">Marketing Digital</button>
-                        <button class="btn btn-outline-primary flex-shrink-0">Data et IA</button>
-                        <button class="btn btn-outline-primary flex-shrink-0">Rédaction Tech</button>
-                        <button class="btn btn-outline-primary flex-shrink-0">DevOps et Cloud</button>
+                        <button class="btn btn-outline-primary flex-shrink-0 btnFiltre"
+                            data-category="tous">Tous</button>
+                        <button class="btn btn-outline-primary flex-shrink-0 btnFiltre"
+                            data-category="Developpeur">Développement Web</button>
+                        <button class="btn btn-outline-primary flex-shrink-0 btnFiltre"
+                            data-category="designe_ui">Design UI/UX</button>
+                        <button class="btn btn-outline-primary flex-shrink-0 btnFiltre"
+                            data-category="Marketing">Marketing Digital</button>
+                        <button class="btn btn-outline-primary flex-shrink-0 btnFiltre" data-category="Data_IA">Data et
+                            IA</button>
+                        <button class="btn btn-outline-primary flex-shrink-0 btnFiltre"
+                            data-category="redaction">Rédaction Tech</button>
+                        <button class="btn btn-outline-primary flex-shrink-0 btnFiltre" data-category="DevOps">DevOps et
+                            Cloud</button>
                     </div>
                 </div>
             </div>
@@ -94,7 +101,7 @@
             <div class="container">
                 <div class="row g-5">
 
-                    <article class="col-12 col-lg-4 col-md-6">
+                    <article class="col-12 col-lg-4 col-md-6" data-category="designe_ui">
                         <div class="card cardInServ">
                             <img class="card-img-top"
                                 src="image/Download this free icon about framer logo_ Find the perfect icon for Your Project and download them in SVG, PNG, ICO or ICNS, its Free!.jpg"
@@ -131,7 +138,7 @@
                         </div>
                     </article>
 
-                    <article class="col-12 col-lg-4 col-md-6">
+                    <article class="col-12 col-lg-4 col-md-6" data-category="Data_IA">
                         <div class="card cardInServ">
                             <img class="card-img-top" src="image/python.jpg" alt="Developpeur flutter">
                             <div class="freelancepersonne card-body">
@@ -167,9 +174,9 @@
                         </div>
                     </article>
 
-                    <article class="col-12 col-lg-4 col-md-6">
+                    <article class="col-12 col-lg-4 col-md-6" data-category="Developpeur">
                         <div class="card cardInServ">
-                            <img class="card-img-top" src="image/flutter.jpg" alt="Developpeur flutter">
+                            <img class="card-img-top" src="image/flutter.jpg" alt="Developpeur">
                             <div class="freelancepersonne card-body">
                                 <div class="d-flex align-items-center mb-2 gap-3">
                                     <img class="rounded-circle freelance-avatar" src="image/3D cartoon character.jpg"
@@ -202,9 +209,9 @@
                         </div>
                     </article>
 
-                    <article class="col-12 col-lg-4 col-md-6">
+                    <article class="col-12 col-lg-4 col-md-6" data-category="DevOps">
                         <div class="card cardInServ">
-                            <img class="card-img-top" src="image/aws.jpg" alt="Developpeur flutter">
+                            <img class="card-img-top" src="image/aws.jpg" alt="DevOps et Cloud">
                             <div class="freelancepersonne card-body">
                                 <div class="d-flex align-items-center mb-2 gap-3">
                                     <img class="rounded-circle freelance-avatar" src="image/3D cartoon character.jpg"
@@ -238,9 +245,9 @@
                         </div>
                     </article>
 
-                    <article class="col-12 col-lg-4 col-md-6">
+                    <article class="col-12 col-lg-4 col-md-6" data-category="redaction">
                         <div class="card cardInServ">
-                            <img class="card-img-top" src="image/redaction.jpg" alt="Developpeur flutter">
+                            <img class="card-img-top" src="image/redaction.jpg" alt="Rédaction Tech">
                             <div class="freelancepersonne card-body">
                                 <div class="d-flex align-items-center mb-2 gap-3">
                                     <img class="rounded-circle freelance-avatar" src="image/3D cartoon character.jpg"
@@ -274,9 +281,9 @@
                         </div>
                     </article>
 
-                    <article class="col-12 col-lg-4 col-md-6">
+                    <article class="col-12 col-lg-4 col-md-6" data-category="Marketing">
                         <div class="card cardInServ">
-                            <img class="card-img-top" src="image/metaads.jpg" alt="Developpeur flutter">
+                            <img class="card-img-top" src="image/metaads.jpg" alt="Marketing Digital">
                             <div class="freelancepersonne card-body">
                                 <div class="d-flex align-items-center mb-2 gap-3">
                                     <img class="rounded-circle freelance-avatar" src="image/3D cartoon character.jpg"
@@ -310,9 +317,9 @@
                         </div>
                     </article>
 
-                    <article class="col-12 col-lg-4 col-md-6">
+                    <article class="col-12 col-lg-4 col-md-6" data-category="Data_IA">
                         <div class="card cardInServ">
-                            <img class="card-img-top" src="image/api.jpg" alt="Developpeur flutter">
+                            <img class="card-img-top" src="image/api.jpg" alt="Data et IA">
                             <div class="freelancepersonne card-body">
                                 <div class="d-flex align-items-center mb-2 gap-3">
                                     <img class="rounded-circle freelance-avatar" src="image/3D cartoon character.jpg"
@@ -346,9 +353,9 @@
                         </div>
                     </article>
 
-                    <article class="col-12 col-lg-4 col-md-6">
+                    <article class="col-12 col-lg-4 col-md-6" data-category="DevOps">
                         <div class="card cardInServ">
-                            <img class="card-img-top" src="image/securite.jpg" alt="Developpeur flutter">
+                            <img class="card-img-top" src="image/securite.jpg" alt="DevOps et Cloud">
                             <div class="freelancepersonne card-body">
                                 <div class="d-flex align-items-center mb-2 gap-3">
                                     <img class="rounded-circle freelance-avatar" src="image/3D cartoon character.jpg"
@@ -382,7 +389,7 @@
                         </div>
                     </article>
 
-                    <article class="col-12 col-lg-4 col-md-6">
+                    <article class="col-12 col-lg-4 col-md-6" data-category="Developpeur">
                         <div class="card cardInServ">
                             <img class="card-img-top" src="image/api.jpg" alt="Developpeur flutter">
                             <div class="freelancepersonne card-body">
@@ -499,7 +506,7 @@
             </div>
         </div>
     </footer>
-    <div class="fixed-bottom d-flex">
+    <div class="fixed-bottom d-flex btnRemonte">
         <button id="btnRemonte" class="ms-auto fs-4 px-2 py-1 bg-primary text-light rounded-3 border-0 fw-bold "><i
                 class="bi bi-arrow-up"></i>
         </button>

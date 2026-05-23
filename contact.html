@@ -72,26 +72,52 @@
 
         <section> -->
             <div class="container">
+
+                <div class="d-flex justify-content-center">
+                    <div class="pupPupMessage w-50">
+                        <div class="messageApprouver text-center">
+                            <h4 class="text-black">Formulaire envoyé !</h4>
+                            <p class="fw-bold text-black py-2">
+                                Votre message a bien été envoyé. Nous vous répondrons dans les plus brefs
+                                délais.
+                            </p>
+                            <button class="px-5 py-1 fs-6 fw-bol border-0 rounded-2" id="btnPuppup">
+                                Fermer
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="row g-4">
 
                     <!-- -====formulaire de contact=== -->
                     <div class="col-12 col-md-6 h-100 cardInServ shadow rounded-2 py-5 px-3">
-                        <form action="">
+                        <form action="" class="formulaire">
                             <div class="row">
-                                <div class="col-12 col-md-6 d-flex flex-column ">
+                                <div class="col-12 col-md-6 d-flex flex-column">
                                     <label for="">Nom *</label>
-                                    <input class="form-control" type="text" name="name" placeholder="Milliard" required>
+                                    <input class="form-control" id="nomUser" type="text" name="name"
+                                        placeholder="Milliard" required>
+                                    <p class="erreurNom text-danger">
+                                        erreur : votre nom doit etre superrieur ou egale a 2 caractere
+                                    </p>
                                 </div>
                                 <div class="col-12 col-md-6 d-flex flex-column ">
                                     <label for="">Prénom *</label>
-                                    <input class="form-control" type="text" name="prenom" placeholder="Milliard"
-                                        required>
+                                    <input class="form-control" id="prenomUser" type="text" name="prenom"
+                                        placeholder="Milliard" required>
+                                    <p class="erreurPrenom text-danger">
+                                        erreur : votre prenom doit etre superrieur a 2 carecatere
+                                    </p>
                                 </div>
                             </div>
-                            <div class="d-flex flex-column ">
+                            <div class="d-flex flex-column">
                                 <label for="">mail *</label>
-                                <input class="form-control" type="text" name="mail" placeholder="Milliard@dollard.com"
-                                    required>
+                                <input class="form-control" id="mailUser" type="text" name="mail"
+                                    placeholder="Milliard@dollard.com" required>
+                                <p class="erreurMail text-danger">
+                                    erreur : vous n'avez pas saisi un bon mail
+                                </p>
                             </div>
                             <div class="d-flex flex-column ">
                                 <label for="">Sujet *</label>
@@ -109,11 +135,14 @@
                                 <label for="">Message * </label>
                                 <textarea class="form-control mb4" name="message" id="message"
                                     placeholder="d'ecrive votre message" rows="5"></textarea>
+                                <p class="erreurMessage text-danger">
+                                    erreur : vous devez saisir plus de 20 caractere
+                                </p>
                             </div>
-                            <button class="btn btn-primary form-control">Envoyer le message →</button>
+
+                            <button class="btn btn-primary form-control" id="sendBtnForm">Envoyer le message →</button>
                         </form>
                     </div>
-
                     <!-- carte d'addresse -->
                     <div class="col-12 col-md-6 mab">
                         <div class="cardInServ rounded-2 shadow p-3 mb-5">
@@ -222,7 +251,7 @@
             </div>
         </div>
     </footer>
-    <div class="fixed-bottom d-flex">
+    <div class="fixed-bottom d-flex btnRemonte">
         <button id="btnRemonte" class="ms-auto fs-4 px-2 py-1 bg-primary text-light rounded-3 border-0 fw-bold "><i
                 class="bi bi-arrow-up"></i>
         </button>

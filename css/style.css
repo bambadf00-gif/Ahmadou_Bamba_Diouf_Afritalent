@@ -705,28 +705,91 @@ footer h5 {
 /*=============================
 btn de romonte
 =============================== */
-#btnRemonte{
-    margin:2rem ;
+#btnRemonte {
+    margin: 2rem;
     opacity: 0;
     pointer-events: none;
     transition: 0.3s ease;
 }
 
-#btnRemonte.btnRmtAfficher{
+.btnRemonte {
+    pointer-events: none;
+}
+
+#btnRemonte.btnRmtAfficher {
     pointer-events: auto;
     opacity: 1;
 }
+
 /*=====================================================
 Les sections qui apparaissent en fondu
 ===================================================== */
 
-section{
+section {
     opacity: 0;
     transform: translateY(100px);
-    transition: opacity 0.6s ease-out , 0.6s ease-in-out;
+    transition: opacity 0.6s ease-out, 0.6s ease-in-out;
 }
 
-section.visbleSection{
+section.visbleSection {
     opacity: 1;
     transform: translateY(0);
+}
+
+/*=====================================================
+cache et reaparition des freelances 
+===================================================== */
+
+article {
+    display: none;
+}
+
+article.visi {
+    display: block;
+}
+
+/* =================================================
+ validation du formulaire de contac
+================================================== */
+.erreurNom,
+.erreurPrenom,
+.erreurMail,
+.erreurMessage {
+    display: none;
+}
+
+.erreurNom.erreurVisible {
+    display: block;
+}
+
+.erreurPrenom.erreurVisible {
+    display: block;
+}
+
+.erreurMail.erreurVisible {
+    display: block;
+}
+
+.erreurMessage.erreurVisible {
+    display: block;
+}
+/* =============================================
+puppup apres validation formulaire
+================================================= */
+.pupPupMessage {
+    background: rgba(14, 255, 6, 0.509);
+    backdrop-filter: blur(20px);
+    transition: 0.3s ease;
+    padding: 4rem 2rem;
+    border-radius: 1rem;
+    position: fixed;
+    z-index: 1000;
+    margin-top: 6rem;
+    display: none;
+}
+.pupPupMessage.messageVue{
+    display: block;
+}
+.pupPupMessage.messageVueFerme{
+    display: none;
 }
