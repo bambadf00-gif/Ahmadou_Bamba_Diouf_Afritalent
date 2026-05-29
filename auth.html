@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AfriTalent Authentification</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="icon" href="image/iconelogo.png" type="image/png">
+</head>
+
+<body>
+    <h1 class="d-none">Avertissement</h1>
+    <div class="container">
+        <div class="row justify-content-center align-items-center vh-100">
+            <div class="col-12 col-md-6 col-lg-6">
+                <div class="shadow p-5 rounded-5 justify-content-center d-flex">
+
+
+                    <!-- propositon de connexion -->
+                    <form action="userconnexion" class="formConnexion">
+                        <h2 class="fs-2">Créer un nouveau compte</h2>
+                        <p>
+                            Vous avez déjà un compte ?
+                            <button type="button" id="connexion" class="border-0 bg-transparent text-warning">
+                                Connectez-vous
+                            </button>
+                        </p>
+
+                        <div class="">
+                            <button
+                                class="d-flex border-1 p-2 rounded-3 bg-transparent w-100 d-flex  justify-content-evenly auth">
+                                <img src="image/google.png" class="img-fluid" alt="google Authentification">
+                                <span class="fw-bold">Continuer avec Google</span>
+                            </button>
+                            <button
+                                class="d-flex border-1 p-2 rounded-3 bg-transparent w-100 d-flex  justify-content-evenly my-3 auth">
+                                <img src="image/apple.png" alt="google Authentification">
+                                <span class="fw-bold">Continuer avec Apple</span>
+                            </button>
+                            <button
+                                class="d-flex border-1 p-2 rounded-3 bg-transparent w-100 d-flex  justify-content-evenly auth">
+                                <img src="image/facebook.png" alt="google Authentification">
+                                <span class="fw-bold">Continuer avec facebook</span>
+                            </button>
+
+                            <button
+                                class="d-flex border-1 p-2 rounded-3 bg-transparent w-100 d-flex  justify-content-evenly mt-3 auth">
+                                <i class="bi bi-envelope-fill"></i>
+                                <span class="fw-bold">Continuer avec votre Mail</span>
+                            </button>
+                        </div>
+                    </form>
+
+
+                    <form action="userInscrit" class="formInscription">
+                        <h2 class="fs-2">Vous n'avez pas de compte ?</h2>
+                        <p>
+                            Vous avez déjà un compte ?
+                            <button type="button" id="inscription" class="border-0 bg-transparent text-warning">
+                                Inscrivez-vous
+                            </button>
+                        </p>
+
+                        <div class="mt-5">
+                            <button
+                                class="d-flex border-1 p-2 rounded-3 bg-transparent w-100 d-flex  justify-content-evenly mb-3 auth">
+                                <i class="bi bi-envelope-arrow-up-fill"></i>
+                                <span class="fw-bold">Continuer avec votre Mail/le Nom d'utilisateur</span>
+                            </button>
+
+                            <button
+                                class="d-flex border-1 p-2 rounded-3 bg-transparent w-100 d-flex  justify-content-evenly auth">
+                                <img src="image/google.png" class="img-fluid" alt="google Authentification">
+                                <span class="fw-bold">Continuer avec Google</span>
+                            </button>
+                            <div class="d-flex justify-content-between gap-2">
+                                <button
+                                    class="d-flex border-1 p-2 rounded-3 bg-transparent w-50 d-flex  justify-content-evenly my-3 auth">
+                                    <img src="image/apple.png" alt="google Authentification">
+                                    <span class="fw-bold fs-6">Apple</span>
+                                </button>
+                                <button
+                                    class="d-flex border-1 p-2 rounded-3 bg-transparent w-50 d-flex  justify-content-evenly my-3 auth">
+                                    <img src="image/facebook.png" alt="google Authentification">
+                                    <span class="fw-bold fs-6">Facebook</span>
+                                </button>
+                            </div>
+
+                        </div>
+                    </form>
+
+                    <!-- connexion par mail -->
+                    <form action="usercon" class="formConnexionMail">
+                        <div>
+                            <h2 class="fs-2">Veuillez continuer avec votre adresse e-mail ou votre nom d'utilisateur.</h2>
+                            <p class="py-3 text-dark">
+                                Une vérification supplémentaire pourrait être requise ultérieurement.
+                            </p>
+                        </div>
+
+                        <div>
+                            <label for="userEmailf" class="mb-2">Adresse e-mail ou nom d'utilisateur</label>
+                            <input type="email" id="userEmailf" name="email" placeholder="millard@gmail.com" class="form-control">
+                        </div>
+
+                        <div class="mb-2">
+                            <label for="password" class="mb-2 mt-3">Mot de passe</label>
+                            <input type="password" name="password" id="password" placeholder="1!@#$%^*e&^^$"
+                                class="form-control">
+                        </div>
+
+                        <button class="w-100 mb-3 btn btn-primary">continuer</button>
+
+                        <div class="d-flex justify-content-between">
+                            <button type="button" id="oublie" class="border-0 bg-transparent text-warning">
+                                Mot de passe oublié ?
+                            </button>
+                            <button type="button" id="creeCompt" class="border-0 bg-transparent text-warning">
+                                Créer un compte
+                            </button>
+                            <!-- <a href="#" class="icon-link icon-link-hover flex-wrap">Mot de passe oublié ?
+                                <i class="bi bi-arrow-right"></i>
+                            </a> -->
+                            <!-- <a href="#" class="icon-link icon-link-hover flex-wrap">Créer un compte
+                                <i class="bi bi-arrow-right"></i> -->
+                            <!-- </a> -->
+                        </div>
+                    </form>
+
+
+                    <!-- Réinitialiser le mot de passe  -->
+                    <form action="userOublie" class="formOublie">
+                        <div>
+                            <h2 class="fs-2">Réinitialiser le mot de passe .</h2>
+                            <p class="py-3 text-dark">
+                                Saisissez votre adresse e-mail et nous vous enverrons un lien pour réinitialiser votre
+                                mot de passe.
+                            </p>
+                        </div>
+
+                        <div class="my-3">
+                            <label for="uMail" class="mb-2">Adresse e-mail</label>
+                            <input type="email" id="uMail" name="email" placeholder="millard@gmail.com" class="form-control">
+                        </div>
+
+
+                        <button class="w-100 mb-3 btn btn-primary">Réinitialiser le mot de passe</button>
+
+                        <div>
+                            <button id="cont"
+                                class="icon-link icon-link-hover flex-wrap border-0 bg-transparent text-warning">
+                                <i class="bi bi-arrow-left"></i>
+                                connexion
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

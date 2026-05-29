@@ -432,7 +432,7 @@ styl des icone type ippal
 }
 
 /* ===========================================
-page frellence
+page freelance
 ============================================== */
 .recherche::-webkit-scrollbar {
     display: none;
@@ -442,15 +442,6 @@ page frellence
     background: transparent;
 }
 
-.search {
-    background-color: var(--bg-span-out);
-    z-index: 1000;
-    top: 5rem;
-}
-
-.recherche {
-    margin-top: 4.5rem;
-}
 
 .freelancepersonne p {
     font-size: .8rem;
@@ -468,6 +459,19 @@ page frellence
 
 .verifiez {
     font-size: .8rem;
+}
+
+.search {
+    background-color: var(--bg-span-out);
+    z-index: 1000;
+    top: 5rem;
+    width: 100vw;
+    transition: all 0.3s ease-in;
+}
+.search.searchvue{
+    width: 85vw;
+    position: fixed;
+    top: 5rem;
 }
 
 
@@ -613,11 +617,6 @@ page about
 /* ====================================
 page blog
 ======================================= */
-
-.bloghome {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../image/blog.jpg');
-    height: 100vh;
-}
 
 .articleentete {
     background-color: var(--primary);
@@ -773,6 +772,7 @@ article.visi {
 .erreurMessage.erreurVisible {
     display: block;
 }
+
 /* =============================================
 puppup apres validation formulaire
 ================================================= */
@@ -787,9 +787,26 @@ puppup apres validation formulaire
     margin-top: 6rem;
     display: none;
 }
-.pupPupMessage.messageVue{
+
+.pupPupMessage.messageVue {
     display: block;
 }
-.pupPupMessage.messageVueFerme{
+
+.pupPupMessage.messageVueFerme {
     display: none;
 }
+
+/* ================================
+auentification 
+===================================*/
+.formConnexion,
+.formInscription,
+.formConnexionMail,
+.formOublie {
+    display: none;
+}
+
+.vueAuth {
+    display: block;
+}
+
