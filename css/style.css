@@ -23,7 +23,6 @@ html {
     /* ---police--- */
     --font-titel: 'Playfair Display', serif;
     --font-para: 'DM Sans', sans-serif;
-
     /*---------------------
             couleur 
     -----------------------*/
@@ -249,10 +248,6 @@ h4 {
     font-size: .6em;
 }
 
-section {
-    padding: 3rem 0;
-}
-
 
 /* ====================
 Page d'acceuil
@@ -303,7 +298,6 @@ bande defilant avec des img de marque
     to {
         transform: translateX(-25%);
     }
-
 }
 
 /* ---------------------------
@@ -404,8 +398,8 @@ styl des icone type ippal
 }
 
 .imgavis img {
-    width: 50px;
-    height: 50px;
+    width: 80%;
+    height: 80%;
 }
 
 .ctaindex {
@@ -415,7 +409,7 @@ styl des icone type ippal
 
 /* animation */
 .process {
-    transition: 0.3s ease;
+    transition: 0.3s ease-in-out;
 }
 
 .process:hover {
@@ -468,16 +462,17 @@ page freelance
     width: 100vw;
     transition: all 0.3s ease-in;
 }
-.search.searchvue{
+
+.search.searchvue {
     width: 85vw;
     position: fixed;
     top: 5rem;
 }
 
 
-/* ============================================
- page Tarif 
- ============================================== */
+/* ================================================
+==================== page Tarif =================== 
+=================================================== */
 .tarifpopulaire {
     background-color: transparent;
     background: linear-gradient(to bottom, #6116db11, #6116db56);
@@ -498,10 +493,43 @@ page freelance
 }
 
 /* ===========================================
-page about 
+==================page about==================
 ============================================== */
 .img-hom-about {
     width: 30vw;
+    animation: ab 5s infinite;
+}
+
+.img-home-index {
+    animation: tom 5s infinite;
+}
+
+@keyframes tom {
+    0% {
+        transform: translateY(10px);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(10px);
+    }
+}
+
+@keyframes ab {
+    0% {
+        transform: translateY(20px);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(20px);
+    }
 }
 
 .bentoabout1 {
@@ -726,8 +754,9 @@ Les sections qui apparaissent en fondu
 
 section {
     opacity: 0;
-    transform: translateY(100px);
-    transition: opacity 0.6s ease-out, 0.6s ease-in-out;
+    transform: translateY(80px);
+    transition: opacity 0.8s ease-out , transform 0.8s ease-out;
+    padding: 3rem 0;
 }
 
 section.visbleSection {
@@ -776,37 +805,15 @@ article.visi {
 /* =============================================
 puppup apres validation formulaire
 ================================================= */
-.pupPupMessage {
-    background: rgba(14, 255, 6, 0.509);
-    backdrop-filter: blur(20px);
-    transition: 0.3s ease;
-    padding: 4rem 2rem;
-    border-radius: 1rem;
-    position: fixed;
-    z-index: 1000;
-    margin-top: 6rem;
+.mesVal1 {
+    border: 2px solid rgb(0, 255, 0);
+    padding: .5em 1em;
+    font-size: 1.2em;
+    text-align: center;
+    color: rgb(0, 255, 0);
     display: none;
 }
 
-.pupPupMessage.messageVue {
+.mesVal1.voixme {
     display: block;
 }
-
-.pupPupMessage.messageVueFerme {
-    display: none;
-}
-
-/* ================================
-auentification 
-===================================*/
-.formConnexion,
-.formInscription,
-.formConnexionMail,
-.formOublie {
-    display: none;
-}
-
-.vueAuth {
-    display: block;
-}
-

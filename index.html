@@ -17,7 +17,8 @@
      ====header site avec menu navigation
      ==================================== -->
     <header>
-        <nav id="navbar" class="navbar navbar-expand-lg mt-3 shadow mx-auto navbar-light rounded-4 menu-glace fixed-top">
+        <nav id="navbar"
+            class="navbar navbar-expand-lg mt-3 shadow mx-auto navbar-light rounded-4 menu-glace fixed-top">
             <div class="container">
                 <!-- logo  -->
                 <a class="navbar-brand" href="index.html">
@@ -46,7 +47,7 @@
                     </div>
                     <!-- bouton rejoindre et darkmod  -->
                     <button id="darkmod" class="bg-transparent fs-4 px-1 border-0">
-                        <i class="bi bi-moon-stars-fill"></i>
+                        <i class="bi bi-moon-stars-fill text-primary"></i>
                     </button>
                 </div>
             </div>
@@ -78,7 +79,7 @@
 
                     <!-- image acceuill -->
                     <div class="col-12 col-sm-6 col-md-6">
-                        <img src="image/home.png" class="img-fluid" alt="Macbook AfriTalent">
+                        <img src="image/home.png" class="img-fluid img-home-index" alt="Macbook AfriTalent">
                     </div>
                 </div>
 
@@ -388,26 +389,15 @@
                     </div>
                 </div>
 
-
-                <!-- avis -->
                 <div class="carousel slide" data-bs-ride="carousel" id="avisclient">
-                    <div class="carousel-inner">
-
-                        <!-- conteneur avis 1 -->
-                        <div class="carousel-item active ">
-                            <div class="row g-2">
-
-
-                                <!-- avis 1 -->
-                                <div class="col-12 col-lg-4 col-md-4">
-                                    <div class="bg-dark p-3 rounded-3 h-100">
-                                        <div class="imgavis d-flex align-items-center gap-3 mb-0">
-                                            <img class="rounded-circle" src="image/avis1.jpg" alt="Aminata Diallo">
-                                            <div class="d-flex flex-column text-light fs-6">
-                                                <strong>Aminata Diallo</strong>
-                                                <span>Développeuse Full Stack</span>
-                                            </div>
-                                        </div>
+                    <div class="carousel-inner p-5 bg-dark rounded-4">
+                        <div class="imgavis carousel-item active">
+                            <div class="row">
+                                <div class=" col-12 col-lg-6 col-md-6">
+                                    <img class="rounded-2" src="image/avis1.jpg" alt="Aminata Diallo">
+                                    <div class="d-flex flex-column pt-3 text-light fs-6">
+                                        <strong>Aminata Diallo</strong>
+                                        <span>Développeuse Full Stack</span>
                                         <div class="text-warning py-3">
                                             <i class="bi bi-star-fill"></i>
                                             <i class="bi bi-star-fill"></i>
@@ -415,98 +405,28 @@
                                             <i class="bi bi-star-fill"></i>
                                             <i class="bi bi-star-fill"></i>
                                         </div>
-                                        <p class="text-light">
-                                            "Grâce à AfriTalent, j’ai triplé mes revenus en moins de 6 mois.
-                                            La plateforme me connecte à des clients sérieux avec des paiements toujours
-                                            ponctuels.
-                                            "
-                                        </p>
-                                        <div class="text-success py-2 py-2">
-                                            <i class="bi bi-patch-check-fill"></i>
-                                            <i>Avis Cértifiés</i>
-                                        </div>
                                     </div>
                                 </div>
-
-
-                                <!-- avis 2 -->
-                                <div class="col-12 col-lg-4 col-md-4">
-                                    <div class="bg-dark p-3 rounded-3 h-100">
-                                        <div class="imgavis d-flex align-items-center gap-3 mb-0">
-                                            <img class="rounded-circle" src="image/avis2.jpg" alt="Aminata Diallo">
-                                            <div class="d-flex flex-column text-light fs-6">
-                                                <strong>Moussa Traoré</strong>
-                                                <span>CEO AgriTech</span>
-                                            </div>
-                                        </div>
-                                        <div class="text-warning py-3">
-                                            <i class="bi bi-star-fill"></i>
-                                            <i class="bi bi-star-fill"></i>
-                                            <i class="bi bi-star-fill"></i>
-                                            <i class="bi bi-star-fill"></i>
-                                            <i class="bi bi-star-fill"></i>
-                                        </div>
-                                        <p class="text-light">
-                                            "Nous avons recruté 4 développeurs via AfriTalent pour notre projet
-                                            d'application mobile. Qualité irréprochable, délais respectés.
-                                            Notre référence absolue pour le freelance tech.
-                                            "
-                                        </p>
-                                        <div class="text-success py-2 py-2">
-                                            <i class="bi bi-patch-check-fill"></i>
-                                            <i>Avis Cértifiés</i>
-                                        </div>
-                                    </div>
+                                <div class=" col-12 col-lg-6 col-md-6 d-flex align-items-center">
+                                    <p class="text-light fs-4 pt-5">
+                                        Au début, j’étais sceptique à propos des plateformes freelance en ligne, mais
+                                        AfriTalent a complètement changé ma vision. En quelques semaines, j’ai reçu mes
+                                        premiers clients sérieux sans avoir à chercher moi-même. Ce que j’apprécie le
+                                        plus, c’est la transparence des paiements et la qualité des projets proposés.
+                                        Aujourd’hui, je travaille presque à temps plein sur la plateforme et mes revenus
+                                        sont beaucoup plus stables qu’avant
+                                    </p>
                                 </div>
-
-
-                                <!-- avis 3 -->
-                                <div class="col-12 col-lg-4 col-md-4">
-                                    <div class="bg-dark p-3 rounded-3 h-100">
-                                        <div class="imgavis d-flex align-items-center gap-3 mb-0">
-                                            <img class="rounded-circle" src="image/avis3.jpg" alt="Aminata Diallo">
-                                            <div class="d-flex flex-column text-light fs-6">
-                                                <strong>Sarah Mensah</strong>
-                                                <span>Designer UI/UX</span>
-                                            </div>
-                                        </div>
-                                        <div class="text-warning py-3">
-                                            <i class="bi bi-star-fill"></i>
-                                            <i class="bi bi-star-fill"></i>
-                                            <i class="bi bi-star-fill"></i>
-                                            <i class="bi bi-star-fill"></i>
-                                            <i class="bi bi-star-fill"></i>
-                                        </div>
-                                        <p class="text-light">
-                                            "L'interface est intuitive, le support réactif et les opportunités
-                                            nombreuses. AfriTalent comprend vraiment les besoins des créatifs africains.
-                                            "
-                                        </p>
-                                        <div class="text-success py-2 py-2">
-                                            <i class="bi bi-patch-check-fill"></i>
-                                            <i>Avis Cértifiés</i>
-                                        </div>
-                                    </div>
-                                </div>
-
                             </div>
                         </div>
 
-                        <!-- conteneur avis 2 -->
-                        <div class="carousel-item">
-                            <div class="row g-2">
-
-
-                                <!-- avis 4 -->
-                                <div class="col-12 col-lg-4 col-md-4">
-                                    <div class="bg-dark p-3 rounded-3 h-100">
-                                        <div class="imgavis d-flex align-items-center gap-3 mb-0">
-                                            <img class="rounded-circle" src="image/avis4.jpg" alt="Aminata Diallo">
-                                            <div class="d-flex flex-column text-light fs-6">
-                                                <strong>Fatou Diallo</strong>
-                                                <span>Designer UI</span>
-                                            </div>
-                                        </div>
+                        <div class="imgavis carousel-item">
+                            <div class="row">
+                                <div class=" col-12 col-lg-6 col-md-6">
+                                    <img class="rounded-2" src="image/avis2.jpg" alt="Fatou Ndiaye">
+                                    <div class="d-flex flex-column pt-3 text-light fs-6">
+                                        <strong>Fatou Ndiaye</strong>
+                                        <span> Rédactrice Web</span>
                                         <div class="text-warning py-3">
                                             <i class="bi bi-star-fill"></i>
                                             <i class="bi bi-star-fill"></i>
@@ -514,95 +434,27 @@
                                             <i class="bi bi-star-fill"></i>
                                             <i class="bi bi-star-fill"></i>
                                         </div>
-                                        <p class="text-light">
-                                            La plateforme est fluide, moderne et très intuitive. Je recommande
-                                            "
-                                        </p>
-                                        <div class="text-success py-2 py-2">
-                                            <i class="bi bi-patch-check-fill"></i>
-                                            <i>Avis Cértifiés</i>
-                                        </div>
                                     </div>
                                 </div>
-
-                                <!-- avis 5 -->
-                                <div class="col-12 col-lg-4 col-md-4">
-                                    <div class="bg-dark p-3 rounded-3 h-100">
-                                        <div class="imgavis d-flex align-items-center gap-3 mb-0">
-                                            <img class="rounded-circle" src="image/avis5.jpg" alt="Aminata Diallo">
-                                            <div class="d-flex flex-column text-light fs-6">
-                                                <strong>Sophie L</strong>
-                                                <span>CEO startup</span>
-                                            </div>
-                                        </div>
-                                        <div class="text-warning py-3">
-                                            <i class="bi bi-star-fill"></i>
-                                            <i class="bi bi-star-fill"></i>
-                                            <i class="bi bi-star-fill"></i>
-                                            <i class="bi bi-star-fill"></i>
-                                            <i class="bi bi-star-fill"></i>
-                                        </div>
-                                        <p class="text-light">
-                                            "Nous avons recruté plusieurs freelances compétents en quelques jours
-                                            "
-                                        </p>
-                                        <div class="text-success py-2 py-2">
-                                            <i class="bi bi-patch-check-fill"></i>
-                                            <i>Avis Cértifiés</i>
-                                        </div>
-                                    </div>
+                                <div class=" col-12 col-lg-6 col-md-6 d-flex align-items-center">
+                                    <p class="text-light fs-4 pt-5">
+                                        Je cherchais une solution pour mon activité de design graphique, car les réseaux
+                                        sociaux ne me rapportaient pas assez de clients fiables. Avec AfriTalent, j’ai
+                                        pu accéder à des entreprises qui recherchent vraiment des professionnels
+                                        qualifiés. Le système est simple, les missions sont claires et surtout les
+                                        paiements sont rapides. C’est devenu ma source principale de revenus.
+                                    </p>
                                 </div>
-
-
-                                <!-- avis 6 -->
-                                <div class="col-12 col-lg-4 col-md-4">
-                                    <div class="bg-dark p-3 rounded-3 h-100">
-                                        <div class="imgavis d-flex align-items-center gap-3 mb-0">
-                                            <img class="rounded-circle" src="image/avis6.jpg" alt="Aminata Diallo">
-                                            <div class="d-flex flex-column text-light fs-6">
-                                                <strong>Amadou D</strong>
-                                                <span>Développeur Full Stack</span>
-                                            </div>
-                                        </div>
-                                        <div class="text-warning py-3">
-                                            <i class="bi bi-star-fill"></i>
-                                            <i class="bi bi-star-fill"></i>
-                                            <i class="bi bi-star-fill"></i>
-                                            <i class="bi bi-star-fill"></i>
-                                            <i class="bi bi-star-fill"></i>
-                                        </div>
-                                        <p class="text-light">
-                                            "Grâce à AfriTalent, j’ai trouvé des missions bien rémunérées avec des
-                                            clients
-                                            sérieux.
-                                            "
-                                        </p>
-                                        <div class="text-success py-2 py-2">
-                                            <i class="bi bi-patch-check-fill"></i>
-                                            <i>Avis Cértifiés</i>
-                                        </div>
-                                    </div>
-                                </div>
-
                             </div>
                         </div>
 
-
-                        <!-- conteneur avis 3 -->
-                        <div class="carousel-item">
-                            <div class="row g-2">
-
-
-                                <!-- avis 7 -->
-                                <div class="col-12 col-lg-4 col-md-4">
-                                    <div class="bg-dark p-3 rounded-3 h-100">
-                                        <div class="imgavis d-flex align-items-center gap-3 mb-0">
-                                            <img class="rounded-circle" src="image/avis1.jpg" alt="Aminata Diallo">
-                                            <div class="d-flex flex-column text-light fs-6">
-                                                <strong>Fatou Diallo</strong>
-                                                <span>Designer UI</span>
-                                            </div>
-                                        </div>
+                        <div class="imgavis carousel-item">
+                            <div class="row">
+                                <div class=" col-12 col-lg-6 col-md-6">
+                                    <img class="rounded-2" src="image/avis5.jpg" alt="Ibrahima Sarr">
+                                    <div class="d-flex flex-column pt-3 text-light fs-6">
+                                        <strong>Ibrahima Sarr</strong>
+                                        <span>Designer UI/UX</span>
                                         <div class="text-warning py-3">
                                             <i class="bi bi-star-fill"></i>
                                             <i class="bi bi-star-fill"></i>
@@ -610,81 +462,19 @@
                                             <i class="bi bi-star-fill"></i>
                                             <i class="bi bi-star-fill"></i>
                                         </div>
-                                        <p class="text-light">
-                                            La plateforme est fluide, moderne et très intuitive. Je recommande
-                                            "
-                                        </p>
-                                        <div class="text-success py-2 py-2">
-                                            <i class="bi bi-patch-check-fill"></i>
-                                            <i>Avis Cértifiés</i>
-                                        </div>
                                     </div>
                                 </div>
-
-                                <!-- avis 8 -->
-                                <div class="col-12 col-lg-4 col-md-4">
-                                    <div class="bg-dark p-3 rounded-3 h-100">
-                                        <div class="imgavis d-flex align-items-center gap-3 mb-0">
-                                            <img class="rounded-circle" src="image/avis2.jpg" alt="Aminata Diallo">
-                                            <div class="d-flex flex-column text-light fs-6">
-                                                <strong>Aminata Diallo</strong>
-                                                <span>Développeuse Full Stack</span>
-                                            </div>
-                                        </div>
-                                        <div class="text-warning py-3">
-                                            <i class="bi bi-star-fill"></i>
-                                            <i class="bi bi-star-fill"></i>
-                                            <i class="bi bi-star-fill"></i>
-                                            <i class="bi bi-star-fill"></i>
-                                            <i class="bi bi-star-fill"></i>
-                                        </div>
-                                        <p class="text-light">
-                                            "Grâce à AfriTalent, j’ai triplé mes revenus en moins de 6 mois.
-                                            La plateforme me connecte à des clients sérieux avec des paiements toujours
-                                            ponctuels.
-                                            "
-                                        </p>
-                                        <div class="text-success py-2 py-2">
-                                            <i class="bi bi-patch-check-fill"></i>
-                                            <i>Avis Cértifiés</i>
-                                        </div>
-                                    </div>
+                                <div class=" col-12 col-lg-6 col-md-6 d-flex align-items-center">
+                                    <p class="text-light fs-4 pt-5">
+                                        Ce que j’aime avec AfriTalent, c’est la sécurité et la régularité. Avant, je
+                                        travaillais avec des clients qui payaient en retard ou disparaissaient.
+                                        Maintenant, tout est structuré et encadré. J’ai même pu augmenter mes tarifs
+                                        grâce à la visibilité que j’ai obtenue sur la plateforme. C’est clairement un
+                                        outil qui aide les freelances africains à passer au niveau supérieur.
+                                    </p>
                                 </div>
-
-
-                                <!-- avis 9 -->
-                                <div class="col-12 col-lg-4 col-md-4">
-                                    <div class="bg-dark p-3 rounded-3 h-100">
-                                        <div class="imgavis d-flex align-items-center gap-3 mb-0">
-                                            <img class="rounded-circle" src="image/avis6.jpg" alt="Aminata Diallo">
-                                            <div class="d-flex flex-column text-light fs-6">
-                                                <strong>Amadou D</strong>
-                                                <span>Développeur Full Stack</span>
-                                            </div>
-                                        </div>
-                                        <div class="text-warning py-3">
-                                            <i class="bi bi-star-fill"></i>
-                                            <i class="bi bi-star-fill"></i>
-                                            <i class="bi bi-star-fill"></i>
-                                            <i class="bi bi-star-fill"></i>
-                                            <i class="bi bi-star-fill"></i>
-                                        </div>
-                                        <p class="text-light">
-                                            "Grâce à AfriTalent, j’ai trouvé des missions bien rémunérées avec des
-                                            clients
-                                            sérieux.
-                                            "
-                                        </p>
-                                        <div class="text-success py-2 py-2">
-                                            <i class="bi bi-patch-check-fill"></i>
-                                            <i>Avis Cértifiés</i>
-                                        </div>
-                                    </div>
-                                </div>
-
                             </div>
                         </div>
-
                     </div>
 
                     <button class="carousel-control-prev" data-bs-target="#avisclient" data-bs-slide="prev"
@@ -697,13 +487,12 @@
                     </button>
                 </div>
 
-
             </div>
         </section>
 
-        <!-- =================================
-          cta final
-          ==================================== -->
+        <!--=======================================
+          =====================cta final===========
+          =========================================-->
         <section class="m-5">
             <div class="container  ctaindex bg-primary rounded-5 d-flex justify-content-center align-items-center">
                 <div class="text-center text-light flex-wrap">
@@ -795,8 +584,8 @@
             </div>
         </div>
     </footer>
-    <div class="fixed-bottom d-flex">
-        <button id="btnRemonte" class="ms-auto fs-4 px-2 py-1 bg-primary text- rounded-3 border-0 fw-bold "><i
+    <div class="fixed-bottom d-flex btnRemonte">
+        <button id="btnRemonte" class="ms-auto fs-4 px-2 py-1 bg-primary text-light rounded-3 border-0 fw-bold "><i
                 class="bi bi-arrow-up"></i>
         </button>
     </div>

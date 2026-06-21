@@ -72,6 +72,14 @@ NOM-Prenom-AfriTalent/
 
 - GitHub Pages : https://github.com/bambadf00-gif/Ahmadou_Bamba_Diouf_Afritalent
 
+## Capture d'ecran site 
+- Home : ![alt text](image/homeImg.png)
+- Frellence : ![alt text](image/frellenceImg.png)
+- Tarif : ![alt text](image/tarifImg.png)
+- About : ![alt text](image/aboutImg.png)
+- Blog : ![alt text](image/blogImg.png)
+- Contact : ![alt text](image/contactImg.png)
+
 ## Ressources consultées
 
 - [MDN Web Docs](https://developer.mozilla.org/fr/)

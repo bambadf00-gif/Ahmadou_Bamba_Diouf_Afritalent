@@ -46,7 +46,7 @@
                     </div>
                     <!-- bouton rejoindre et darkmod  -->
                     <button id="darkmod" class="bg-transparent fs-4 px-1 border-0">
-                        <i class="bi bi-moon-stars-fill"></i>
+                        <i class="bi bi-moon-stars-fill text-primary"></i>
                     </button>
                 </div>
             </div>
@@ -73,21 +73,6 @@
         <section> -->
             <div class="container">
 
-                <div class="d-flex justify-content-center">
-                    <div class="pupPupMessage w-50">
-                        <div class="messageApprouver text-center">
-                            <h2 class="fs-4 text-black">Formulaire envoyé !</h2>
-                            <p class="fw-bold text-black py-2">
-                                Votre message a bien été envoyé. Nous vous répondrons dans les plus brefs
-                                délais.
-                            </p>
-                            <button class="px-5 py-1 fs-6 fw-bol border-0 rounded-2" id="btnPuppup">
-                                Fermer
-                            </button>
-                        </div>
-                    </div>
-                </div>
-
                 <div class="row g-4">
 
                     <!-- -====formulaire de contact=== -->
@@ -97,7 +82,7 @@
                                 <div class="col-12 col-md-6 d-flex flex-column">
                                     <label for="nomUser">Nom *</label>
                                     <input class="form-control" id="nomUser" type="text" name="name"
-                                        placeholder="Milliard" required>
+                                        placeholder="Milliard" >
                                     <p class="erreurNom text-danger">
                                         erreur : votre nom doit etre superrieur ou egale a 2 caractere
                                     </p>
@@ -105,7 +90,7 @@
                                 <div class="col-12 col-md-6 d-flex flex-column ">
                                     <label for="prenomUser">Prénom *</label>
                                     <input class="form-control" id="prenomUser" type="text" name="prenom"
-                                        placeholder="Milliard" required>
+                                        placeholder="Milliard" >
                                     <p class="erreurPrenom text-danger">
                                         erreur : votre prenom doit etre superrieur a 2 carecatere
                                     </p>
@@ -114,14 +99,14 @@
                             <div class="d-flex flex-column">
                                 <label for="mailUser">mail *</label>
                                 <input class="form-control" id="mailUser" type="text" name="mail"
-                                    placeholder="Milliard@dollard.com" required>
+                                    placeholder="Milliard@dollard.com" >
                                 <p class="erreurMail text-danger">
                                     erreur : vous n'avez pas saisi un bon mail
                                 </p>
                             </div>
                             <div class="d-flex flex-column ">
                                 <label for="selection">Sujet *</label>
-                                <select class="form-control" name="selection" id="selection" required>
+                                <select class="form-control" name="selection" id="selection" >
                                     <option value="">====Sélectionnez un service====</option>
                                     <option value="Question">Question générale</option>
                                     <option value="Problème">Problème technique</option>
@@ -142,6 +127,9 @@
 
                             <button class="btn btn-primary form-control" id="sendBtnForm">Envoyer le message →</button>
                         </form>
+                        <div class="mesVal1 my-3 rounded-2">
+                            <strong>Votre message a ete envoye avec succes!</strong>
+                        </div>
                     </div>
                     <!-- carte d'addresse -->
                     <div class="col-12 col-md-6 mab">
@@ -161,11 +149,11 @@
                         </div>
 
                         <!-- localisation -->
-                        <div class="cardInServ rounded-2 shadow p-3 vh-100 d-flex flex-column">
+                        <div class="cardInServ rounded-2 shadow p-3  d-flex flex-column">
                             <strong class="py-4">Localisation</strong>
-                            <iframe class="ifa rounded-4"
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30873.56443412955!2d-17.479215860366818!3d14.701530515744876!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xec17294860da20f%3A0xf94a7846fc39faa8!2sCentre%20De%20Sant%C3%A9%20Gaspard%20Kamara!5e0!3m2!1sfr!2ssn!4v1776797894359!5m2!1sfr!2ssn"
-                                width="100" height="100" style="border:0;" allowfullscreen="" loading="lazy"
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d61735.554876564325!2d-17.587339179957933!3d14.742407496236718!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xec112dd6f2bfcb5%3A0xe5df9d85ac34dfd2!2sNgor%2C%20Dakar%2C%20Senegal!5e0!3m2!1sen!2snl!4v1780663605090!5m2!1sen!2snl"
+                                width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
                                 referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
                     </div>
